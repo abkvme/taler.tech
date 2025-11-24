@@ -10,7 +10,7 @@ This guide will walk you through installing and setting up the TALER wallet on y
 ### Windows Installation
 
 1. **Extract the archive**:
-   - Right-click `taler-v0.18.44.7-win64.zip`
+   - Right-click the downloaded `taler-*-win64.zip` file
    - Select "Extract All..."
    - Choose a destination folder (e.g., `C:\Program Files\TALER`)
 
@@ -26,12 +26,12 @@ This guide will walk you through installing and setting up the TALER wallet on y
 
 1. **Extract the archive**:
    ```bash
-   tar -xzvf taler-v0.18.44.7-macos-arm64.tar.gz
+   tar -xzvf taler-*-macos-arm64.tar.gz
    ```
 
 2. **Move to Applications** (optional):
    ```bash
-   sudo mv taler-v0.18.44.7/bin/* /usr/local/bin/
+   sudo mv taler-*/bin/* /usr/local/bin/
    ```
 
 3. **Grant execution permissions**:
@@ -43,8 +43,8 @@ This guide will walk you through installing and setting up the TALER wallet on y
 
 1. **Extract the archive**:
    ```bash
-   tar -xzvf taler-v0.18.44.7-linux-x64.tar.gz
-   cd taler-v0.18.44.7
+   tar -xzvf taler-*-linux-x64.tar.gz
+   cd taler-*
    ```
 
 2. **Install to system** (optional):

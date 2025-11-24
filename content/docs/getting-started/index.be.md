@@ -22,18 +22,18 @@ weight: 1
 
 Загрузіце апошнюю версію кашалька TALER з афіцыйнага рэпазіторыя GitHub:
 
-**Апошні рэліз**: [v0.18.44.7](https://github.com/abkvme/taler/releases/tag/v0.18.44.7)
+**Апошні рэліз**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 
 ### Крок 2: Выберыце вашу платформу
 
 Выберыце адпаведны пакет для вашай аперацыйнай сістэмы:
 
-| Платформа | Файл | Апісанне |
+| Платформа | File Pattern | Апісанне |
 |----------|------|-------------|
-| **Windows (64-bit)** | `taler-v0.18.44.7-win64.zip` | Выканальны файл для Windows 10/11 |
-| **macOS (M1/M2/M3+)** | `taler-v0.18.44.7-macos-arm64.tar.gz` | Натыўная зборка для Apple Silicon |
-| **Linux (64-bit)** | `taler-v0.18.44.7-linux-x64.tar.gz` | Бінарны файл для Linux x86_64 |
-| **Linux (ARM64)** | `taler-v0.18.44.7-linux-arm64.tar.gz` | Бінарны файл для ARM64/aarch64 |
+| **Windows (64-bit)** | `taler-*-win64.zip` | Выканальны файл для Windows 10/11 |
+| **macOS (M1/M2/M3+)** | `taler-*-macos-arm64.tar.gz` | Натыўная зборка для Apple Silicon |
+| **Linux (64-bit)** | `taler-*-linux-x64.tar.gz` | Бінарны файл для Linux x86_64 |
+| **Linux (ARM64)** | `taler-*-linux-arm64.tar.gz` | Бінарны файл для ARM64/aarch64 |
 
 
 

@@ -10,7 +10,7 @@ weight: 2
 ### Усталяванне ў Windows
 
 1. **Распакуйце архіў**:
-   - Пстрыкніце правай кнопкай мышы на `taler-v0.18.44.7-win64.zip`
+   - Пстрыкніце правай кнопкай мышы на загружаны файл `taler-*-win64.zip`
    - Выберыце "Выняць усё..."
    - Выберыце папку прызначэння (напрыклад, `C:\Program Files\TALER`)
 
@@ -26,12 +26,12 @@ weight: 2
 
 1. **Распакуйце архіў**:
    ```bash
-   tar -xzvf taler-v0.18.44.7-macos-arm64.tar.gz
+   tar -xzvf taler-*-macos-arm64.tar.gz
    ```
 
 2. **Перамясціце ў Applications** (апцыянальна):
    ```bash
-   sudo mv taler-v0.18.44.7/bin/* /usr/local/bin/
+   sudo mv taler-*/bin/* /usr/local/bin/
    ```
 
 3. **Прадастаўце правы на выкананне**:
@@ -43,8 +43,8 @@ weight: 2
 
 1. **Распакуйце архіў**:
    ```bash
-   tar -xzvf taler-v0.18.44.7-linux-x64.tar.gz
-   cd taler-v0.18.44.7
+   tar -xzvf taler-*-linux-x64.tar.gz
+   cd taler-*
    ```
 
 2. **Усталюйце ў сістэму** (апцыянальна):

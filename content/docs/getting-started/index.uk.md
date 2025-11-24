@@ -22,18 +22,18 @@ weight: 1
 
 Завантажте останню версію гаманця TALER з офіційного репозиторію GitHub:
 
-**Останній реліз**: [v0.18.44.7](https://github.com/abkvme/taler/releases/tag/v0.18.44.7)
+**Останній реліз**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 
 ### Крок 2: Виберіть вашу платформу
 
 Оберіть відповідний пакет для вашої операційної системи:
 
-| Платформа | Файл | Опис |
+| Платформа | File Pattern | Опис |
 |----------|------|-------------|
-| **Windows (64-bit)** | `taler-v0.18.44.7-win64.zip` | Виконуваний файл для Windows 10/11 |
-| **macOS (M1/M2/M3+)** | `taler-v0.18.44.7-macos-arm64.tar.gz` | Нативна збірка для Apple Silicon |
-| **Linux (64-bit)** | `taler-v0.18.44.7-linux-x64.tar.gz` | Бінарний файл для Linux x86_64 |
-| **Linux (ARM64)** | `taler-v0.18.44.7-linux-arm64.tar.gz` | Бінарний файл для ARM64/aarch64 |
+| **Windows (64-bit)** | `taler-*-win64.zip` | Виконуваний файл для Windows 10/11 |
+| **macOS (M1/M2/M3+)** | `taler-*-macos-arm64.tar.gz` | Нативна збірка для Apple Silicon |
+| **Linux (64-bit)** | `taler-*-linux-x64.tar.gz` | Бінарний файл для Linux x86_64 |
+| **Linux (ARM64)** | `taler-*-linux-arm64.tar.gz` | Бінарний файл для ARM64/aarch64 |
 
 
 

@@ -125,18 +125,18 @@ Before running a TALER node, ensure your system meets these requirements:
 
 Download the latest TALER node software from the official GitHub repository:
 
-**Latest Release**: [v0.18.44.7](https://github.com/abkvme/taler/releases/tag/v0.18.44.7)
+**Latest Release**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 
 ### Step 2: Choose Your Platform
 
 Select the appropriate package for your operating system:
 
-| Platform | File | Description |
+| Platform | File Pattern | Description |
 |----------|------|-------------|
-| **Windows (64-bit)** | `taler-v0.18.44.7-win64.zip` | Windows 10/11 binaries |
-| **macOS (M1/M2/M3+)** | `taler-v0.18.44.7-macos-arm64.tar.gz` | Apple Silicon native build |
-| **Linux (64-bit)** | `taler-v0.18.44.7-linux-x64.tar.gz` | Linux x86_64 binaries |
-| **Linux (ARM64)** | `taler-v0.18.44.7-linux-arm64.tar.gz` | ARM64/aarch64 binaries |
+| **Windows (64-bit)** | `taler-*-win64.zip` | Windows 10/11 binaries |
+| **macOS (M1/M2/M3+)** | `taler-*-macos-arm64.tar.gz` | Apple Silicon native build |
+| **Linux (64-bit)** | `taler-*-linux-x64.tar.gz` | Linux x86_64 binaries |
+| **Linux (ARM64)** | `taler-*-linux-arm64.tar.gz` | ARM64/aarch64 binaries |
 
 ---
 
@@ -145,7 +145,7 @@ Select the appropriate package for your operating system:
 ### Windows Installation
 
 1. **Extract the archive**:
-   - Right-click `taler-v0.18.44.7-win64.zip`
+   - Right-click the downloaded `taler-*-win64.zip` file
    - Select "Extract All..."
    - Choose a destination folder (e.g., `C:\TALER`)
 
@@ -157,8 +157,8 @@ Select the appropriate package for your operating system:
 
 1. **Extract the archive**:
    ```bash
-   tar -xzvf taler-v0.18.44.7-macos-arm64.tar.gz
-   cd taler-v0.18.44.7
+   tar -xzvf taler-*-macos-arm64.tar.gz
+   cd taler-*
    ```
 
 2. **Install to system** (optional):
@@ -177,8 +177,8 @@ Select the appropriate package for your operating system:
 
 1. **Extract the archive**:
    ```bash
-   tar -xzvf taler-v0.18.44.7-linux-x64.tar.gz
-   cd taler-v0.18.44.7
+   tar -xzvf taler-*-linux-x64.tar.gz
+   cd taler-*
    ```
 
 2. **Install to system** (optional):

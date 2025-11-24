@@ -22,18 +22,18 @@ Before you begin, ensure your system meets the following requirements:
 
 Download the latest TALER wallet from the official GitHub repository:
 
-**Latest Release**: [v0.18.44.7](https://github.com/abkvme/taler/releases/tag/v0.18.44.7)
+**Latest Release**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 
 ### Step 2: Choose Your Platform
 
 Select the appropriate package for your operating system:
 
-| Platform | File | Description |
-|----------|------|-------------|
-| **Windows (64-bit)** | `taler-v0.18.44.7-win64.zip` | Windows 10/11 executable |
-| **macOS (M1/M2/M3+)** | `taler-v0.18.44.7-macos-arm64.tar.gz` | Apple Silicon native build |
-| **Linux (64-bit)** | `taler-v0.18.44.7-linux-x64.tar.gz` | Linux x86_64 binary |
-| **Linux (ARM64)** | `taler-v0.18.44.7-linux-arm64.tar.gz` | ARM64/aarch64 binary |  
+| Platform | File Pattern | Description |
+|----------|--------------|-------------|
+| **Windows (64-bit)** | `taler-*-win64.zip` | Windows 10/11 executable |
+| **macOS (M1/M2/M3+)** | `taler-*-macos-arm64.tar.gz` | Apple Silicon native build |
+| **Linux (64-bit)** | `taler-*-linux-x64.tar.gz` | Linux x86_64 binary |
+| **Linux (ARM64)** | `taler-*-linux-arm64.tar.gz` | ARM64/aarch64 binary |  
 
 
 

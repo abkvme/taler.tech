@@ -125,18 +125,18 @@ weight: 9
 
 Завантажте останнє програмне забезпечення вузла TALER з офіційного репозиторію GitHub:
 
-**Останній реліз**: [v0.18.44.7](https://github.com/abkvme/taler/releases/tag/v0.18.44.7)
+**Останній реліз**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 
 ### Крок 2: Оберіть вашу платформу
 
 Оберіть відповідний пакет для вашої операційної системи:
 
-| Платформа | Файл | Опис |
+| Платформа | File Pattern | Опис |
 |-----------|------|------|
-| **Windows (64-bit)** | `taler-v0.18.44.7-win64.zip` | Бінарники Windows 10/11 |
-| **macOS (M1/M2/M3+)** | `taler-v0.18.44.7-macos-arm64.tar.gz` | Нативна збірка Apple Silicon |
-| **Linux (64-bit)** | `taler-v0.18.44.7-linux-x64.tar.gz` | Бінарники Linux x86_64 |
-| **Linux (ARM64)** | `taler-v0.18.44.7-linux-arm64.tar.gz` | Бінарники ARM64/aarch64 |
+| **Windows (64-bit)** | `taler-*-win64.zip` | Бінарники Windows 10/11 |
+| **macOS (M1/M2/M3+)** | `taler-*-macos-arm64.tar.gz` | Нативна збірка Apple Silicon |
+| **Linux (64-bit)** | `taler-*-linux-x64.tar.gz` | Бінарники Linux x86_64 |
+| **Linux (ARM64)** | `taler-*-linux-arm64.tar.gz` | Бінарники ARM64/aarch64 |
 
 ---
 
@@ -145,7 +145,7 @@ weight: 9
 ### Установка Windows
 
 1. **Витягніть архів**:
-   - Клацніть правою кнопкою миші `taler-v0.18.44.7-win64.zip`
+   - Клацніть правою кнопкою миші на загружаний файл `taler-*-win64.zip`
    - Оберіть "Витягти все..."
    - Оберіть папку призначення (наприклад, `C:\TALER`)
 
@@ -157,8 +157,8 @@ weight: 9
 
 1. **Витягніть архів**:
    ```bash
-   tar -xzvf taler-v0.18.44.7-macos-arm64.tar.gz
-   cd taler-v0.18.44.7
+   tar -xzvf taler-*-macos-arm64.tar.gz
+   cd taler-*
    ```
 
 2. **Встановіть у систему** (опціонально):
@@ -177,8 +177,8 @@ weight: 9
 
 1. **Витягніть архів**:
    ```bash
-   tar -xzvf taler-v0.18.44.7-linux-x64.tar.gz
-   cd taler-v0.18.44.7
+   tar -xzvf taler-*-linux-x64.tar.gz
+   cd taler-*
    ```
 
 2. **Встановіть у систему** (опціонально):
