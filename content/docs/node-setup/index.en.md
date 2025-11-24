@@ -121,9 +121,9 @@ Before running a TALER node, ensure your system meets these requirements:
 
 ## Download TALER Node Software
 
-### Step 1: Visit the Official Release Page
+### Step 1: Visit the Release Page
 
-Download the latest TALER node software from the official GitHub repository:
+Download the latest TALER node software from the community-driven GitHub repository:
 
 **Latest Release**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 

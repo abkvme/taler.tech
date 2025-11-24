@@ -18,9 +18,9 @@ Before you begin, ensure your system meets the following requirements:
 
 ## Download TALER Wallet
 
-### Step 1: Visit the Official Release Page
+### Step 1: Visit the Release Page
 
-Download the latest TALER wallet from the official GitHub repository:
+Download the latest TALER wallet from the community-driven GitHub repository:
 
 **Latest Release**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 
