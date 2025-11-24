@@ -462,3 +462,12 @@ other = "Майнінг і стэйкінг"
 
 [rpc_reference]
 other = "Даведнік RPC"
+
+[contribute_to_docs]
+other = "Зрабіць свой уклад у дакументацыю"
+
+[contribute_community_driven]
+other = "Гэтая дакументацыя падтрымліваецца супольнасцю і адкрыта для ўкладу."
+
+[view_contribution_guide]
+other = "Паглядзець кіраўніцтва па ўнясенні ўкладу"

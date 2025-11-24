@@ -462,3 +462,12 @@ other = "Майнинг и стейкинг"
 
 [rpc_reference]
 other = "Справочник RPC"
+
+[contribute_to_docs]
+other = "Внести вклад в документацию"
+
+[contribute_community_driven]
+other = "Эта документация поддерживается сообществом и открыта для вклада."
+
+[view_contribution_guide]
+other = "Посмотреть руководство по внесению вклада"

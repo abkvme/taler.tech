@@ -474,3 +474,12 @@ other = "Wallet RPCs"
 
 [rpc_network]
 other = "Network RPCs"
+
+[contribute_to_docs]
+other = "Contribute to Documentation"
+
+[contribute_community_driven]
+other = "This documentation is community-driven and open for contributions."
+
+[view_contribution_guide]
+other = "View Contribution Guidelines"
