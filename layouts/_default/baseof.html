@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-taler sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/{{ .Language.Lang }}/">
+                <img src="/images/talerlogo2.png" alt="TALER Logo" height="40" class="me-2">
+                <span class="fw-bold">TALER</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link{{ if eq .Section "" }} active{{ end }}" href="/{{ .Language.Lang }}/">
+                            <i class="fas fa-home me-1"></i> {{ i18n "home" }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link{{ if eq .Section "downloads" }} active{{ end }}" href="/{{ .Language.Lang }}/downloads/">
+                            <i class="fas fa-download me-1"></i> {{ i18n "downloads" }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link{{ if eq .Section "links" }} active{{ end }}" href="/{{ .Language.Lang }}/links/">
+                            <i class="fas fa-link me-1"></i> {{ i18n "links" }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link{{ if eq .Section "faq" }} active{{ end }}" href="/{{ .Language.Lang }}/faq/">
+                            <i class="fas fa-question-circle me-1"></i> {{ i18n "faq" }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link{{ if eq .Section "docs" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/">
+                            <i class="fas fa-book me-1"></i> {{ i18n "docs" }}
+                        </a>
+                    </li>
+
+                    <!-- Language Switcher -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i> {{ .Language.LanguageName }}
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            {{ range .AllTranslations }}
+                            <li>
+                                <a class="dropdown-item{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}" href="{{ .RelPermalink }}" data-lang="{{ .Language.Lang }}">
+                                    {{ .Language.LanguageName }}
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fas fa-info-circle me-2"></i>{{ i18n "about" }}</h5>
+                    <p class="small">{{ .Site.Params.description }}</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fas fa-sitemap me-2"></i>{{ i18n "navigation" }}</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="/{{ .Language.Lang }}/" class="text-light text-decoration-none"><i class="fas fa-home me-1"></i> {{ i18n "home" }}</a></li>
+                        <li><a href="/{{ .Language.Lang }}/downloads/" class="text-light text-decoration-none"><i class="fas fa-download me-1"></i> {{ i18n "downloads" }}</a></li>
+                        <li><a href="/{{ .Language.Lang }}/links/" class="text-light text-decoration-none"><i class="fas fa-link me-1"></i> {{ i18n "links" }}</a></li>
+                        <li><a href="/{{ .Language.Lang }}/faq/" class="text-light text-decoration-none"><i class="fas fa-question-circle me-1"></i> {{ i18n "faq" }}</a></li>
+                        <li><a href="/{{ .Language.Lang }}/docs/" class="text-light text-decoration-none"><i class="fas fa-book me-1"></i> {{ i18n "docs" }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fas fa-language me-2"></i>{{ i18n "language" }}</h5>
+                    <ul class="list-unstyled small">
+                        <li>
+                            <a href="{{ .RelPermalink }}" class="text-light text-decoration-none fw-bold" data-lang="{{ .Language.Lang }}">
+                                {{ .Language.LanguageName }}
+                            </a>
+                        </li>
+                        {{ range .AllTranslations }}
+                            {{ if ne .Language.Lang $.Language.Lang }}
+                            <li>
+                                <a href="{{ .RelPermalink }}" class="text-light text-decoration-none" data-lang="{{ .Language.Lang }}">
+                                    {{ .Language.LanguageName }}
+                                </a>
+                            </li>
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center small">
+                <p>&copy; {{ now.Year }} TALER Blockchain. {{ i18n "rights" }}</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Language Detection & Persistence Script -->
+    <script>
+        (function() {
+            // Get saved language preference
+            const savedLang = localStorage.getItem('talerLang');
+            const currentLang = '{{ .Language.Lang }}';
+            const browserLang = navigator.language.substring(0, 2);
+            const supportedLangs = ['en', 'ru', 'be', 'uk'];
+
+            // On first visit, detect browser language
+            if (!savedLang && window.location.pathname === '/') {
+                const targetLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
+                window.location.href = '/' + targetLang + '/';
+            }
+
+            // Save language preference when user clicks language link
+            document.querySelectorAll('[data-lang]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    localStorage.setItem('talerLang', this.getAttribute('data-lang'));
+                });
+            });
+
+            // Save current language
+            if (currentLang) {
+                localStorage.setItem('talerLang', currentLang);
+            }
+        })();
+    </script>
+</body>
+</html>

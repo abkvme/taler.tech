@@ -1,0 +1,141 @@
+{{ define "main" }}
+<div class="container py-5">
+    <h1 class="section-title text-center mb-5">{{ .Title }}</h1>
+
+    <!-- Social Networks -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-share-alt me-2"></i>{{ i18n "social_networks" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                        <h5 class="mt-3">Twitter</h5>
+                        <p class="text-muted small">@TalerBlockchain</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-telegram"></i>
+                        <h5 class="mt-3">Telegram</h5>
+                        <p class="text-muted small">{{ i18n "join_channel" }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-discord"></i>
+                        <h5 class="mt-3">Discord</h5>
+                        <p class="text-muted small">{{ i18n "community_server" }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-reddit"></i>
+                        <h5 class="mt-3">Reddit</h5>
+                        <p class="text-muted small">r/TalerBlockchain</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Resources -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-code me-2"></i>{{ i18n "developer_resources" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        <h5 class="mt-3">GitHub</h5>
+                        <p class="text-muted small">{{ i18n "source_code" }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fas fa-book"></i>
+                        <h5 class="mt-3">{{ i18n "docs" }}</h5>
+                        <p class="text-muted small">{{ i18n "technical_docs" }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fas fa-bug"></i>
+                        <h5 class="mt-3">{{ i18n "issue_tracker" }}</h5>
+                        <p class="text-muted small">{{ i18n "report_bugs" }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Explorers -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-search me-2"></i>{{ i18n "explorers" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fas fa-chart-bar"></i>
+                        <h5 class="mt-3">{{ i18n "block_explorer" }}</h5>
+                        <p class="text-muted small">{{ i18n "explorer_desc" }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fas fa-chart-line"></i>
+                        <h5 class="mt-3">{{ i18n "analytics" }}</h5>
+                        <p class="text-muted small">{{ i18n "analytics_desc" }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Resources -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-star me-2"></i>{{ i18n "official_resources" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fas fa-newspaper"></i>
+                        <h5 class="mt-3">{{ i18n "blog" }}</h5>
+                        <p class="text-muted small">{{ i18n "blog_desc" }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fas fa-envelope"></i>
+                        <h5 class="mt-3">{{ i18n "newsletter" }}</h5>
+                        <p class="text-muted small">{{ i18n "newsletter_desc" }}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                        <h5 class="mt-3">YouTube</h5>
+                        <p class="text-muted small">{{ i18n "video_tutorials" }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

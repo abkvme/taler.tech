@@ -1,0 +1,124 @@
+{{ define "main" }}
+<div class="container py-5">
+    <h1 class="section-title text-center mb-5">{{ .Title }}</h1>
+
+    <!-- Social Networks -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-share-alt me-2"></i>{{ i18n "social_networks" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="social-link-card card">
+                    <a href="https://t.me/talercommunity" target="_blank" rel="noopener">
+                        <i class="fab fa-telegram"></i>
+                        <h5 class="mt-3">Telegram</h5>
+                        <p class="text-muted small">@talercommunity</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="social-link-card card">
+                    <a href="https://github.com/abkvme/taler/discussions" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        <h5 class="mt-3">GitHub Discussions</h5>
+                        <p class="text-muted small">{{ i18n "community_server" }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Resources -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-code me-2"></i>{{ i18n "developer_resources" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="https://github.com/abkvme/taler" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        <h5 class="mt-3">GitHub (Current)</h5>
+                        <p class="text-muted small">v0.18.44.7 and newer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="https://github.com/cryptadev/taler" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        <h5 class="mt-3">GitHub (Legacy)</h5>
+                        <p class="text-muted small">Versions up to v0.17.2.6</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="https://github.com/abkvme/taler/issues" target="_blank" rel="noopener">
+                        <i class="fas fa-bug"></i>
+                        <h5 class="mt-3">{{ i18n "issue_tracker" }}</h5>
+                        <p class="text-muted small">{{ i18n "report_bugs" }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Explorers -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-search me-2"></i>{{ i18n "explorers" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="social-link-card card">
+                    <a href="https://explorer.talercoin.org/" target="_blank" rel="noopener">
+                        <i class="fas fa-chart-bar"></i>
+                        <h5 class="mt-3">{{ i18n "block_explorer" }}</h5>
+                        <p class="text-muted small">explorer.talercoin.org</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="social-link-card card">
+                    <a href="https://explorer.talercrypto.com/" target="_blank" rel="noopener">
+                        <i class="fas fa-chart-line"></i>
+                        <h5 class="mt-3">{{ i18n "block_explorer" }}</h5>
+                        <p class="text-muted small">explorer.talercrypto.com</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exchanges -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-exchange-alt me-2"></i>{{ i18n "exchanges" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="https://btc-trade.com.ua/" target="_blank" rel="noopener">
+                        <i class="fas fa-coins"></i>
+                        <h5 class="mt-3">BTC-Trade</h5>
+                        <p class="text-muted small">btc-trade.com.ua</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="https://richamster.com/" target="_blank" rel="noopener">
+                        <i class="fas fa-coins"></i>
+                        <h5 class="mt-3">Richamster</h5>
+                        <p class="text-muted small">richamster.com</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="social-link-card card">
+                    <a href="https://crexsoft.com/" target="_blank" rel="noopener">
+                        <i class="fas fa-coins"></i>
+                        <h5 class="mt-3">Crexsoft</h5>
+                        <p class="text-muted small">crexsoft.com</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+{{ end }}

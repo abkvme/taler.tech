@@ -1,0 +1,159 @@
+{{ define "main" }}
+<div class="container py-5">
+    <h1 class="section-title text-center mb-5">{{ .Title }}</h1>
+
+    <!-- Desktop Wallets -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-desktop me-2"></i>{{ i18n "desktop_wallets" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <h5 class="card-title">Windows</h5>
+                        <p class="card-text text-muted">{{ i18n "windows_desc" }}</p>
+                        <a href="#" class="btn btn-taler">
+                            <i class="fas fa-download me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <h5 class="card-title">macOS</h5>
+                        <p class="card-text text-muted">{{ i18n "macos_desc" }}</p>
+                        <a href="#" class="btn btn-taler">
+                            <i class="fas fa-download me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h5 class="card-title">Linux</h5>
+                        <p class="card-text text-muted">{{ i18n "linux_desc" }}</p>
+                        <a href="#" class="btn btn-taler">
+                            <i class="fas fa-download me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Apps -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-mobile-alt me-2"></i>{{ i18n "mobile_apps" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <h5 class="card-title">Android</h5>
+                        <p class="card-text text-muted">{{ i18n "android_desc" }}</p>
+                        <a href="#" class="btn btn-taler">
+                            <i class="fab fa-google-play me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <h5 class="card-title">iOS</h5>
+                        <p class="card-text text-muted">{{ i18n "ios_desc" }}</p>
+                        <a href="#" class="btn btn-taler">
+                            <i class="fab fa-app-store me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Node Software -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-server me-2"></i>{{ i18n "node_software" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-12">
+                <div class="card download-card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center">
+                                <div class="platform-icon">
+                                    <i class="fas fa-cubes"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="card-title">{{ i18n "taler_node" }}</h5>
+                                <p class="card-text text-muted">{{ i18n "node_desc" }}</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="#" class="btn btn-taler">
+                                    <i class="fas fa-download me-2"></i>{{ i18n "download" }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Tools -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-code me-2"></i>{{ i18n "developer_tools" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h5 class="card-title">SDK</h5>
+                        <p class="card-text text-muted">{{ i18n "sdk_desc" }}</p>
+                        <a href="#" class="btn btn-outline-taler">
+                            <i class="fab fa-github me-2"></i>{{ i18n "view_github" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h5 class="card-title">CLI Tools</h5>
+                        <p class="card-text text-muted">{{ i18n "cli_desc" }}</p>
+                        <a href="#" class="btn btn-outline-taler">
+                            <i class="fab fa-github me-2"></i>{{ i18n "view_github" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Instructions -->
+    <section class="alert bg-taler-light">
+        <h4 class="text-taler"><i class="fas fa-info-circle me-2"></i>{{ i18n "installation" }}</h4>
+        <p>{{ i18n "install_instructions" }}</p>
+    </section>
+</div>
+{{ end }}

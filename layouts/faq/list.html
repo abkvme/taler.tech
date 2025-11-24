@@ -1,0 +1,124 @@
+{{ define "main" }}
+<div class="container py-5">
+    <h1 class="section-title text-center mb-5">{{ .Title }}</h1>
+
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <!-- General Questions -->
+            <section class="mb-5">
+                <h2 class="text-taler mb-4"><i class="fas fa-question-circle me-2"></i>{{ i18n "general_questions" }}</h2>
+                <div class="accordion faq-accordion" id="generalFAQ">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                {{ i18n "faq1_q" }}
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                            <div class="accordion-body">
+                                {{ i18n "faq1_a" }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                {{ i18n "faq2_q" }}
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                            <div class="accordion-body">
+                                {{ i18n "faq2_a" }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                {{ i18n "faq3_q" }}
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                            <div class="accordion-body">
+                                {{ i18n "faq3_a" }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wallet & Transactions -->
+            <section class="mb-5">
+                <h2 class="text-taler mb-4"><i class="fas fa-wallet me-2"></i>{{ i18n "wallet_transactions" }}</h2>
+                <div class="accordion faq-accordion" id="walletFAQ">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                {{ i18n "faq4_q" }}
+                            </button>
+                        </h3>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#walletFAQ">
+                            <div class="accordion-body">
+                                {{ i18n "faq4_a" }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                {{ i18n "faq5_q" }}
+                            </button>
+                        </h3>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#walletFAQ">
+                            <div class="accordion-body">
+                                {{ i18n "faq5_a" }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mining & Staking -->
+            <section class="mb-5">
+                <h2 class="text-taler mb-4"><i class="fas fa-server me-2"></i>{{ i18n "mining_staking" }}</h2>
+                <div class="accordion faq-accordion" id="miningFAQ">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                {{ i18n "faq6_q" }}
+                            </button>
+                        </h3>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#miningFAQ">
+                            <div class="accordion-body">
+                                {{ i18n "faq6_a" }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                {{ i18n "faq7_q" }}
+                            </button>
+                        </h3>
+                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#miningFAQ">
+                            <div class="accordion-body">
+                                {{ i18n "faq7_a" }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Support -->
+            <section class="alert bg-taler-light mt-5">
+                <h4 class="text-taler"><i class="fas fa-life-ring me-2"></i>{{ i18n "need_more_help" }}</h4>
+                <p>{{ i18n "support_text" }} <a href="/{{ .Language.Lang }}/links/" class="text-taler fw-bold">{{ i18n "community_channels" }}</a>.</p>
+            </section>
+        </div>
+    </div>
+</div>
+{{ end }}

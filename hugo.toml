@@ -1,0 +1,42 @@
+baseURL = 'https://taler.tech/'
+title = 'TALER Blockchain'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    title = 'TALER Blockchain'
+    [languages.en.params]
+      languageCode = 'en'
+
+  [languages.be]
+    languageName = 'Беларуская'
+    weight = 2
+    title = 'Блакчэйн TALER'
+    [languages.be.params]
+      languageCode = 'be'
+
+  [languages.ru]
+    languageName = 'Русский'
+    weight = 3
+    title = 'Блокчейн TALER'
+    [languages.ru.params]
+      languageCode = 'ru'
+
+  [languages.uk]
+    languageName = 'Українська'
+    weight = 4
+    title = 'Блокчейн TALER'
+    [languages.uk.params]
+      languageCode = 'uk'
+
+[params]
+  description = 'TALER Blockchain - Modern cryptocurrency platform'
+  primaryColor = '#1B8FBA'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

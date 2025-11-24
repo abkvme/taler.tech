@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="container py-5">
+    <h1 class="section-title text-center mb-3">{{ .Title }}</h1>
+    <p class="text-center text-muted mb-5">{{ .Content }}</p>
+
+    <!-- Release Version Cards -->
+    <div class="row g-4">
+        {{ range .Pages.ByParam "date" }}
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center">
+                            <div class="display-6 text-taler">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h5 class="mt-2 mb-0">v{{ .Params.version }}</h5>
+                        </div>
+                        <div class="col-md-7">
+                            <h4 class="card-title">{{ .Title }}</h4>
+                            <p class="text-muted">
+                                <i class="fas fa-calendar me-2"></i>{{ .Date.Format "January 2, 2006" }}
+                            </p>
+                            <p class="card-text">{{ .Summary }}</p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <a href="{{ .RelPermalink }}" class="btn btn-taler">
+                                <i class="fas fa-file-alt me-2"></i>{{ i18n "view_release_notes" }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+
+    <!-- No releases message if empty -->
+    {{ if not .Pages }}
+    <div class="alert bg-taler-light text-center">
+        <h4 class="text-taler"><i class="fas fa-info-circle me-2"></i>No Release Notes Available</h4>
+        <p>Release notes will be published here as new versions are released.</p>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

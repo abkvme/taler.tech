@@ -1,0 +1,476 @@
+[home]
+other = "Home"
+
+[downloads]
+other = "Downloads"
+
+[links]
+other = "Links"
+
+[faq]
+other = "FAQ"
+
+[docs]
+other = "Documentation"
+
+[about]
+other = "About"
+
+[navigation]
+other = "Navigation"
+
+[language]
+other = "Language"
+
+[rights]
+other = "All rights reserved."
+
+[hero_description]
+other = "A cryptocurrency inspired by the historic European Thaler - trusted currency of the 15th-19th centuries, reimagined for the digital age"
+
+[get_started]
+other = "Get Started"
+
+[learn_more]
+other = "Learn More"
+
+[key_features]
+other = "Key Features"
+
+[feature_secure_title]
+other = "Secure & Reliable"
+
+[feature_secure_desc]
+other = "Advanced cryptographic security ensuring the safety of your transactions and assets."
+
+[feature_fast_title]
+other = "Fast Transactions"
+
+[feature_fast_desc]
+other = "Lightning-fast transaction processing with minimal fees and maximum efficiency."
+
+[feature_decentralized_title]
+other = "Decentralized Network"
+
+[feature_decentralized_desc]
+other = "Truly decentralized blockchain network powered by community validators."
+
+[about_blockchain]
+other = "About TALER Blockchain"
+
+[about_text_1]
+other = "TALER is a next-generation blockchain platform designed for speed, security, and scalability. Built with cutting-edge technology, TALER provides a robust infrastructure for decentralized applications and digital asset management."
+
+[about_text_2]
+other = "Our blockchain leverages advanced consensus mechanisms to ensure fast transaction finality while maintaining the highest security standards. Whether you're a developer building the next big dApp or a user looking for a reliable cryptocurrency platform, TALER has you covered."
+
+[about_text_3]
+other = "Join thousands of users and developers who are already building the future of finance with TALER blockchain technology."
+
+[get_involved]
+other = "Get Involved"
+
+[get_involved_text]
+other = "Download the wallet, run a node, or explore our documentation to start your journey with TALER."
+
+[join_community]
+other = "Join Community"
+
+[desktop_wallets]
+other = "Desktop Wallets"
+
+[mobile_apps]
+other = "Mobile Applications"
+
+[node_software]
+other = "Node Software"
+
+[developer_tools]
+other = "Developer Tools"
+
+[download]
+other = "Download"
+
+[windows_desc]
+other = "TALER wallet for Windows 10/11"
+
+[macos_desc]
+other = "TALER wallet for macOS 11+"
+
+[linux_desc]
+other = "TALER wallet for Ubuntu, Debian, Fedora"
+
+[android_desc]
+other = "TALER wallet for Android devices"
+
+[ios_desc]
+other = "TALER wallet for iPhone and iPad"
+
+[taler_node]
+other = "TALER Blockchain Node"
+
+[node_desc]
+other = "Run a full node to support the network and validate transactions"
+
+[sdk_desc]
+other = "Software development kit for building on TALER"
+
+[cli_desc]
+other = "Command-line tools for developers"
+
+[view_github]
+other = "View on GitHub"
+
+[installation]
+other = "Installation Instructions"
+
+[install_instructions]
+other = "Detailed installation guides and documentation are available in the Documentation section. For support, please visit our community channels."
+
+[social_networks]
+other = "Social Networks"
+
+[join_channel]
+other = "Join our channel"
+
+[community_server]
+other = "Community server"
+
+[developer_resources]
+other = "Developer Resources"
+
+[source_code]
+other = "Source code repositories"
+
+[technical_docs]
+other = "Technical documentation"
+
+[issue_tracker]
+other = "Issue Tracker"
+
+[report_bugs]
+other = "Report bugs and issues"
+
+[explorers]
+other = "Blockchain Explorers"
+
+[block_explorer]
+other = "Block Explorer"
+
+[exchanges]
+other = "Exchanges"
+
+[explorer_desc]
+other = "Explore blocks and transactions"
+
+[analytics]
+other = "Analytics"
+
+[analytics_desc]
+other = "Network statistics and analytics"
+
+[official_resources]
+other = "Official Resources"
+
+[blog]
+other = "Blog"
+
+[blog_desc]
+other = "Latest news and updates"
+
+[newsletter]
+other = "Newsletter"
+
+[newsletter_desc]
+other = "Subscribe to updates"
+
+[video_tutorials]
+other = "Video tutorials and guides"
+
+[general_questions]
+other = "General Questions"
+
+[wallet_transactions]
+other = "Wallet & Transactions"
+
+[mining_staking]
+other = "Mining & Staking"
+
+[need_more_help]
+other = "Need More Help?"
+
+[support_text]
+other = "If you can't find the answer you're looking for, please reach out to our"
+
+[community_channels]
+other = "community channels"
+
+[faq1_q]
+other = "What is TALER Blockchain?"
+
+[faq1_a]
+other = "TALER is a decentralized blockchain platform designed for fast, secure, and scalable cryptocurrency transactions. It provides a robust infrastructure for digital assets and decentralized applications."
+
+[faq2_q]
+other = "How do I get started with TALER?"
+
+[faq2_a]
+other = "To get started, download the TALER wallet from our Downloads page, create a new wallet, and you can start receiving and sending TALER tokens. For detailed instructions, check our Documentation."
+
+[faq3_q]
+other = "Is TALER secure?"
+
+[faq3_a]
+other = "Yes, TALER uses advanced cryptographic security measures to protect your transactions and assets. The blockchain is secured by a decentralized network of validators."
+
+[faq4_q]
+other = "How do I create a wallet?"
+
+[faq4_a]
+other = "Download the wallet application for your platform, install it, and follow the setup wizard to create a new wallet. Make sure to securely backup your recovery phrase."
+
+[faq5_q]
+other = "What are the transaction fees?"
+
+[faq5_a]
+other = "Transaction fees on TALER are minimal and vary based on network congestion. The current fee structure can be viewed in your wallet before confirming any transaction."
+
+[faq6_q]
+other = "Can I run a validator node?"
+
+[faq6_a]
+other = "Yes, anyone can run a validator node to help secure the network. Visit our Documentation for detailed setup instructions and hardware requirements."
+
+[faq7_q]
+other = "What are the rewards for running a node?"
+
+[faq7_a]
+other = "Validator nodes earn rewards for processing transactions and maintaining network security. Rewards are distributed proportionally based on stake and uptime."
+
+[user_docs]
+other = "User Documentation"
+
+[developer_docs]
+other = "Developer Documentation"
+
+[network_docs]
+other = "Network Documentation"
+
+[getting_started]
+other = "Getting Started"
+
+[wallet_setup]
+other = "Wallet Setup"
+
+[sending_receiving]
+other = "Sending & Receiving"
+
+[security]
+other = "Security Best Practices"
+
+[troubleshooting]
+other = "Troubleshooting"
+
+[dev_overview]
+other = "Development Overview"
+
+[api_reference]
+other = "API Reference"
+
+[smart_contracts]
+other = "Smart Contracts"
+
+[node_setup]
+other = "Running a Node"
+
+[sdk_guides]
+other = "SDK Guides"
+
+[consensus]
+other = "Consensus Mechanism"
+
+[validators]
+other = "Validators"
+
+[governance]
+other = "Governance"
+
+[getting_started_text]
+other = "Learn how to get started with TALER blockchain. This guide covers the basics of setting up your wallet and making your first transaction."
+
+[wallet_setup_text]
+other = "Step-by-step instructions for setting up your TALER wallet on various platforms."
+
+[dev_overview_text]
+other = "Introduction to developing on TALER blockchain. Learn about the architecture, tools, and resources available."
+
+[api_reference_text]
+other = "Complete API reference for interacting with TALER blockchain programmatically."
+
+[consensus_text]
+other = "Understanding TALER's consensus mechanism and how transactions are validated on the network."
+
+[placeholder_title]
+other = "Content Placeholder"
+
+[placeholder_text]
+other = "Detailed documentation content will be added here. This is a placeholder section for future content."
+
+[docs_help_text]
+other = "Can't find what you're looking for? Check our FAQ section or reach out to the community for help."
+
+[release_notes]
+other = "Release Notes"
+
+[view_release_notes]
+other = "View Release Notes"
+
+[version]
+other = "Version"
+
+[released]
+other = "Released"
+
+[whats_new]
+other = "What's New"
+
+[back_to]
+other = "Back to"
+
+[newer]
+other = "Newer"
+
+[older]
+other = "Older"
+
+[new_features]
+other = "New Features"
+
+[improvements]
+other = "Improvements"
+
+[bug_fixes]
+other = "Bug Fixes"
+
+[technical_details]
+other = "Technical Details"
+
+[historical_heritage]
+other = "Historical Heritage"
+
+[taler_history_text]
+other = "The name TALER pays homage to the Thaler (or Taler), a silver coin that was widely used throughout Europe from the 15th to the 19th century. The Thaler was one of the most important and widely circulated currencies of its time, serving as a standard for international trade across European kingdoms and beyond. Just as the historical Thaler represented trust, stability, and widespread acceptance in its era, TALER cryptocurrency aims to embody these same principles in the digital age."
+
+[technical_foundation]
+other = "Technical Foundation"
+
+[bitcoin_legacy_text]
+other = "TALER is built upon the proven foundation of Bitcoin Core, inheriting its robust UTXO model, transaction validation framework, and security architecture. This Bitcoin-based legacy ensures compatibility with well-tested cryptographic standards and provides a solid foundation trusted by millions of users worldwide."
+
+[taler_improvements_text]
+other = "Building on this foundation, TALER introduces significant innovations including a hybrid Proof-of-Work/Proof-of-Stake consensus mechanism, the memory-hard Lyra2Z mining algorithm for ASIC resistance, and the Dark Gravity Wave difficulty adjustment system. Launched in September 2017, TALER has evolved into a mature blockchain platform with native support for modern architectures including Apple Silicon (M1/M2/M3+) and ARM64 servers."
+
+[hybrid_consensus]
+other = "Hybrid Consensus Mechanism"
+
+[consensus_intro_text]
+other = "TALER implements an innovative hybrid consensus system that combines the security of Proof-of-Work with the energy efficiency of Proof-of-Stake. This dual approach provides robust network security while rewarding both miners and long-term holders."
+
+[proof_of_work]
+other = "Proof of Work (PoW)"
+
+[pow_algorithm]
+other = "Algorithm: Lyra2Z (memory-hard, ASIC-resistant)"
+
+[pow_blocktime]
+other = "Target block time: 60 seconds"
+
+[pow_reward]
+other = "Block reward: 4.9 TLR (70% of total)"
+
+[pow_difficulty]
+other = "Difficulty adjustment: Dark Gravity Wave"
+
+[proof_of_stake]
+other = "Proof of Stake (PoS)"
+
+[pos_active]
+other = "Active from block 130,000"
+
+[pos_minage]
+other = "Minimum stake age: 2 days"
+
+[pos_reward]
+other = "Staking reward: 2.1 TLR (30% of total)"
+
+[pos_coinage]
+other = "Rewards based on coin-age (coin-days)"
+
+[coin_specifications]
+other = "Coin Specifications"
+
+[max_supply]
+other = "Maximum Supply"
+
+[genesis_block]
+other = "Genesis Block"
+
+[genesis_date]
+other = "September 13, 2017"
+
+[block_time]
+other = "Block Time"
+
+[block_time_value]
+other = "1 minute (PoW) / ~2.3 minutes (PoS)"
+
+[halving_interval]
+other = "Halving Interval"
+
+[halving_value]
+other = "Every 1,050,000 blocks (~2.5 years)"
+
+[algorithm]
+other = "Algorithm"
+
+[network_port]
+other = "Network Port"
+
+[platform_support]
+other = "Platform Support"
+
+[platform_support_text]
+other = "TALER provides native binaries for all major operating systems and architectures, with first-class support for modern Apple Silicon Macs and ARM64 servers:"
+
+[node_operator_docs]
+other = "Node Operator"
+
+[node_operator_docs_desc]
+other = "Learn how to run and operate TALER nodes, configure talerd daemon, use Docker deployment, and participate in mining/staking."
+
+[user_docs_desc]
+other = "Learn how to use TALER GUI wallet, send and receive coins, manage addresses, and secure your assets."
+
+[developer_docs_desc]
+other = "Comprehensive RPC API documentation for building applications and integrating with TALER blockchain."
+
+[node_cli]
+other = "Command Line (talerd)"
+
+[node_docker]
+other = "Docker Deployment"
+
+[node_mining]
+other = "Mining & Staking"
+
+[rpc_reference]
+other = "RPC Reference"
+
+[rpc_blockchain]
+other = "Blockchain RPCs"
+
+[rpc_wallet]
+other = "Wallet RPCs"
+
+[rpc_network]
+other = "Network RPCs"

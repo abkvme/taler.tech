@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="container-fluid py-5">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-lg-3 col-md-4">
+            <div class="docs-sidebar p-3">
+                <h5 class="text-taler mb-3"><i class="fas fa-book me-2"></i>{{ i18n "docs" }}</h5>
+
+                <!-- User Documentation -->
+                <div class="nav-section-title">{{ i18n "user_docs" }}</div>
+                <nav class="nav flex-column">
+                    <a class="nav-link{{ if in .RelPermalink "getting-started" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/getting-started/">
+                        <i class="fas fa-rocket me-2"></i>{{ i18n "getting_started" }}
+                    </a>
+                    <a class="nav-link{{ if in .RelPermalink "wallet-setup" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/wallet-setup/">
+                        <i class="fas fa-wallet me-2"></i>{{ i18n "wallet_setup" }}
+                    </a>
+                    <a class="nav-link{{ if in .RelPermalink "sending-receiving" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/sending-receiving/">
+                        <i class="fas fa-exchange-alt me-2"></i>{{ i18n "sending_receiving" }}
+                    </a>
+                    <a class="nav-link{{ if in .RelPermalink "security" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/security/">
+                        <i class="fas fa-shield-alt me-2"></i>{{ i18n "security" }}
+                    </a>
+                    <a class="nav-link{{ if in .RelPermalink "node-mining" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/node-mining/">
+                        <i class="fas fa-hammer me-2"></i>{{ i18n "node_mining" }}
+                    </a>
+                </nav>
+
+                <!-- Node Operator Documentation -->
+                <div class="nav-section-title">{{ i18n "node_operator_docs" }}</div>
+                <nav class="nav flex-column">
+                    <a class="nav-link{{ if in .RelPermalink "node-setup" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/node-setup/">
+                        <i class="fas fa-server me-2"></i>{{ i18n "node_setup" }}
+                    </a>
+                    <a class="nav-link{{ if in .RelPermalink "node-cli" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/node-cli/">
+                        <i class="fas fa-terminal me-2"></i>{{ i18n "node_cli" }}
+                    </a>
+                    <a class="nav-link{{ if in .RelPermalink "node-docker" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/node-docker/">
+                        <i class="fab fa-docker me-2"></i>{{ i18n "node_docker" }}
+                    </a>
+                </nav>
+
+                <!-- Developer Documentation -->
+                <div class="nav-section-title">{{ i18n "developer_docs" }}</div>
+                <nav class="nav flex-column">
+                    <a class="nav-link{{ if in .RelPermalink "rpc-reference" }} active{{ end }}" href="/{{ .Language.Lang }}/docs/rpc-reference/">
+                        <i class="fas fa-code me-2"></i>{{ i18n "rpc_reference" }}
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-9 col-md-8">
+            <div class="px-4">
+                <h1 class="section-title">{{ .Title }}</h1>
+
+                <article class="doc-content">
+                    {{ .Content }}
+                </article>
+
+                <!-- Help Section -->
+                <section class="alert bg-taler-light mt-5">
+                    <h4 class="text-taler"><i class="fas fa-question-circle me-2"></i>{{ i18n "need_more_help" }}</h4>
+                    <p>{{ i18n "docs_help_text" }}</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

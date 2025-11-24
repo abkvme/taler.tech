@@ -1,0 +1,118 @@
+{{ define "main" }}
+<div class="container py-5">
+    <h1 class="section-title text-center mb-5">{{ .Title }}</h1>
+
+    <!-- Release Notes Alert -->
+    <div class="alert bg-taler-light mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-2 text-center">
+                <div class="display-4 text-taler">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h4 class="text-taler mb-2"><i class="fas fa-bullhorn me-2"></i>{{ i18n "release_notes" }}</h4>
+                <p class="mb-0">{{ i18n "released" }} {{ i18n "whats_new" }} in the latest version of TALER. View changelog, new features, and improvements.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="/{{ .Language.Lang }}/release-notes/" class="btn btn-taler">
+                    <i class="fas fa-code-branch me-2"></i>{{ i18n "view_release_notes" }}
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Wallets -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-desktop me-2"></i>{{ i18n "desktop_wallets" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <h5 class="card-title">Windows AMD64</h5>
+                        <p class="card-text text-muted">{{ i18n "windows_desc" }}</p>
+                        <a href="https://github.com/abkvme/taler/releases/download/v0.18.44.7/taler-v0.18.44.7-win64.zip" class="btn btn-taler">
+                            <i class="fas fa-download me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <h5 class="card-title">macOS ARM64</h5>
+                        <p class="card-text text-muted">{{ i18n "macos_desc" }}</p>
+                        <a href="https://github.com/abkvme/taler/releases/download/v0.18.44.7/taler-v0.18.44.7-macos-arm64.tar.gz" class="btn btn-taler">
+                            <i class="fas fa-download me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h5 class="card-title">Linux AMD64</h5>
+                        <p class="card-text text-muted">{{ i18n "linux_desc" }}</p>
+                        <a href="https://github.com/abkvme/taler/releases/download/v0.18.44.7/taler-v0.18.44.7-linux-x64.tar.gz" class="btn btn-taler">
+                            <i class="fas fa-download me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card download-card">
+                    <div class="card-body text-center">
+                        <div class="platform-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h5 class="card-title">Linux ARM64</h5>
+                        <p class="card-text text-muted">{{ i18n "linux_desc" }}</p>
+                        <a href="https://github.com/abkvme/taler/releases/download/v0.18.44.7/taler-v0.18.44.7-linux-arm64.tar.gz" class="btn btn-taler">
+                            <i class="fas fa-download me-2"></i>{{ i18n "download" }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Node Software -->
+    <section class="mb-5">
+        <h2 class="text-taler mb-4"><i class="fas fa-server me-2"></i>{{ i18n "node_software" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-12">
+                <div class="card download-card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center">
+                                <div class="platform-icon">
+                                    <i class="fas fa-cubes"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="card-title">{{ i18n "taler_node" }}</h5>
+                                <p class="card-text text-muted">{{ i18n "node_desc" }}</p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="/{{ .Language.Lang }}/docs/node-setup/" class="btn btn-taler">
+                                    <i class="fas fa-book me-2"></i>{{ i18n "learn_more" }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+{{ end }}
