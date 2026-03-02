@@ -386,7 +386,7 @@ other = "Algorithm: Lyra2Z (memory-hard, ASIC-resistant)"
 other = "Target block time: 60 seconds"
 
 [pow_reward]
-other = "Block reward: 4.9 TLR (70% of total)"
+other = "Block reward: 0.4375 TLR (70% of total)"
 
 [pow_difficulty]
 other = "Difficulty adjustment: Dark Gravity Wave"
@@ -401,7 +401,7 @@ other = "Active from block 130,000"
 other = "Minimum stake age: 2 days"
 
 [pos_reward]
-other = "Staking reward: 2.1 TLR (30% of total)"
+other = "Staking reward: 0.1875 TLR (30% of total)"
 
 [pos_coinage]
 other = "Rewards based on coin-age (coin-days)"
@@ -428,7 +428,25 @@ other = "1 minute (PoW) / ~2.3 minutes (PoS)"
 other = "Halving Interval"
 
 [halving_value]
-other = "Every 1,050,000 blocks (~2.5 years)"
+other = "Every 1,050,000 PoW blocks (~2.5 years)"
+
+[halvings_completed]
+other = "Halvings Completed"
+
+[halvings_completed_value]
+other = "4 (current as of March 2026)"
+
+[next_halving]
+other = "Next Halving"
+
+[next_halving_value]
+other = "~Late 2027 (at PoW height 4,730,000)"
+
+[circulating_supply]
+other = "Circulating Supply"
+
+[circulating_supply_value]
+other = "~19,491,107 TLR (as of March 2026)"
 
 [algorithm]
 other = "Algorithm"
@@ -474,6 +492,9 @@ other = "Wallet RPCs"
 
 [rpc_network]
 other = "Network RPCs"
+
+[architecture]
+other = "Architecture"
 
 [contribute_to_docs]
 other = "Contribute to Documentation"

@@ -157,7 +157,7 @@ getwalletinfo
   "walletname": "",
   "walletversion": 169900,
   "balance": 1000.00000000,
-  "immature_balance": 2.10000000,
+  "immature_balance": 0.18750000,
   "unlocked_until": 1748362000,
   ...
 }
@@ -222,9 +222,10 @@ The reward is calculated automatically when you successfully stake a block.
 ### Expected Returns
 
 **Typical Staking Rewards**:
-- Base PoS block reward: 2.1 TLR (30% of 7 TLR PoW block)
+- Base PoS block reward: 0.1875 TLR (30% of 0.4375 TLR PoW block, after 4 halvings)
 - Plus transaction fees from the block
 - Adjusted for coin age and network conditions
+- Rewards halve approximately every 2.5 years
 
 **Staking Frequency**:
 - Depends on your coin amount and age
@@ -235,7 +236,7 @@ The reward is calculated automatically when you successfully stake a block.
 - 1,000 TLR staked
 - 90 days old (maximum weight)
 - May stake every few days to weeks
-- Each stake earns ~2.1 TLR base reward
+- Each stake earns ~0.1875 TLR base reward
 
 ### When Rewards Appear
 
@@ -453,7 +454,7 @@ For serious stakers, run dedicated staking node:
 | **Hardware** | Regular computer | Specialized mining hardware |
 | **Energy** | Very low | Very high |
 | **Entry Barrier** | 10 TLR minimum | Expensive ASIC miners |
-| **Rewards** | 2.1 TLR per block | 4.9 TLR per block |
+| **Rewards** | 0.1875 TLR per block | 0.4375 TLR per block |
 | **Block Time** | ~140 seconds | ~60 seconds |
 | **Recommended For** | Most users | Professional miners |
 
@@ -478,8 +479,8 @@ For serious stakers, run dedicated staking node:
 ### Network Distribution
 
 TALER block rewards are split:
-- **70% to PoW miners**: 4.9 TLR per block
-- **30% to PoS stakers**: 2.1 TLR per block
+- **70% to PoW miners**: 0.4375 TLR per block
+- **30% to PoS stakers**: 0.1875 TLR per block
 
 ### Long-Term Strategy
 

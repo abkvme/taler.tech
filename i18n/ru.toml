@@ -383,7 +383,7 @@ other = "Алгоритм: Lyra2Z (память-интенсивный, ASIC-у�
 other = "Целевое время блока: 60 секунд"
 
 [pow_reward]
-other = "Награда за блок: 4.9 TLR (70% от общей)"
+other = "Награда за блок: 0.4375 TLR (70% от общей)"
 
 [pow_difficulty]
 other = "Корректировка сложности: Dark Gravity Wave"
@@ -398,7 +398,7 @@ other = "Активен с блока 130,000"
 other = "Минимальный возраст стейка: 2 дня"
 
 [pos_reward]
-other = "Награда за стейкинг: 2.1 TLR (30% от общей)"
+other = "Награда за стейкинг: 0.1875 TLR (30% от общей)"
 
 [pos_coinage]
 other = "Награды основаны на возрасте монет (монето-дни)"
@@ -425,7 +425,25 @@ other = "1 минута (PoW) / ~2.3 минуты (PoS)"
 other = "Интервал халвинга"
 
 [halving_value]
-other = "Каждые 1,050,000 блоков (~2.5 года)"
+other = "Каждые 1,050,000 PoW блоков (~2.5 года)"
+
+[halvings_completed]
+other = "Халвингов завершено"
+
+[halvings_completed_value]
+other = "4 (по состоянию на март 2026)"
+
+[next_halving]
+other = "Следующий халвинг"
+
+[next_halving_value]
+other = "~Конец 2027 (на PoW высоте 4,730,000)"
+
+[circulating_supply]
+other = "Текущее предложение"
+
+[circulating_supply_value]
+other = "~19,491,107 TLR (по состоянию на март 2026)"
 
 [algorithm]
 other = "Алгоритм"

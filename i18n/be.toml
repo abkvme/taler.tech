@@ -383,7 +383,7 @@ other = "Алгарытм: Lyra2Z (памяць-інтэнсіўны, ASIC-ус�
 other = "Мэтавы час блока: 60 секунд"
 
 [pow_reward]
-other = "Узнагарода за блок: 4.9 TLR (70% ад агульнай)"
+other = "Узнагарода за блок: 0.4375 TLR (70% ад агульнай)"
 
 [pow_difficulty]
 other = "Карэкціроўка складанасці: Dark Gravity Wave"
@@ -398,7 +398,7 @@ other = "Актыўны з блока 130,000"
 other = "Мінімальны ўзрост стэйка: 2 дні"
 
 [pos_reward]
-other = "Узнагарода за стэйкінг: 2.1 TLR (30% ад агульнай)"
+other = "Узнагарода за стэйкінг: 0.1875 TLR (30% ад агульнай)"
 
 [pos_coinage]
 other = "Узнагароды заснаваныя на ўзросце манет (манета-дні)"
@@ -425,7 +425,25 @@ other = "1 хвіліна (PoW) / ~2.3 хвіліны (PoS)"
 other = "Інтэрвал халвінгу"
 
 [halving_value]
-other = "Кожныя 1,050,000 блокаў (~2.5 года)"
+other = "Кожныя 1,050,000 PoW блокаў (~2.5 года)"
+
+[halvings_completed]
+other = "Халвінгаў завершана"
+
+[halvings_completed_value]
+other = "4 (па стане на сакавік 2026)"
+
+[next_halving]
+other = "Наступны халвінг"
+
+[next_halving_value]
+other = "~Канец 2027 (на PoW вышыні 4,730,000)"
+
+[circulating_supply]
+other = "Бягучая прапанова"
+
+[circulating_supply_value]
+other = "~19,491,107 TLR (па стане на сакавік 2026)"
 
 [algorithm]
 other = "Алгарытм"
