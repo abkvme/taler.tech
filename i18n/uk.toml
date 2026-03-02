@@ -481,6 +481,9 @@ other = "Майнінг і стейкінг"
 [rpc_reference]
 other = "Довідник RPC"
 
+[architecture]
+other = "Архітектура"
+
 [contribute_to_docs]
 other = "Зробити внесок у документацію"
 
