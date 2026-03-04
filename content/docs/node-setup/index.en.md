@@ -393,8 +393,19 @@ prune=2000
 
 ---
 
+## Community Seed Servers
+
+TALER nodes discover peers through a combination of hardcoded seeds and a community-maintained seed list hosted on GitHub. If you run a node with reliable uptime, you can contribute it to the seed list to help strengthen the network.
+
+**Learn more**: [Community Seed Servers](/en/docs/seed-servers/) - How peer discovery works and how to add your node
+
+**Seed list repository**: [github.com/abkvme/taler-seeds](https://github.com/abkvme/taler-seeds)
+
+---
+
 ## Next Steps
 
+- **Seed Servers**: Learn about peer discovery and contribute your node in [Community Seed Servers](/en/docs/seed-servers/)
 - **Command Line**: Learn advanced `talerd` options in the [Node CLI](/en/docs/node-cli/) guide
 - **Docker Deployment**: Run TALER node in containers with [Docker](/en/docs/node-docker/)
 - **Mining & Staking**: Participate in block generation in [Mining & Staking](/en/docs/node-mining/)
