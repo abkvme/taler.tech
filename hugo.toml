@@ -2,6 +2,7 @@ baseURL = 'https://taler.tech/'
 title = 'TALER Blockchain'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
 
 [languages]
   [languages.en]
@@ -10,6 +11,8 @@ defaultContentLanguageInSubdir = true
     title = 'TALER Blockchain'
     [languages.en.params]
       languageCode = 'en'
+      ogLocale = 'en_US'
+      description = 'TALER Blockchain — a modern hybrid PoW/PoS cryptocurrency inspired by the historic European Thaler. Secure, fast, decentralized. Wallets, nodes and developer docs.'
 
   [languages.be]
     languageName = 'Беларуская'
@@ -17,6 +20,8 @@ defaultContentLanguageInSubdir = true
     title = 'Блакчэйн TALER'
     [languages.be.params]
       languageCode = 'be'
+      ogLocale = 'be_BY'
+      description = 'Блакчэйн TALER — сучасная гібрыдная PoW/PoS крыптавалюта, натхнёная гістарычным еўрапейскім Талерам. Бяспечны, хуткі, дэцэнтралізаваны.'
 
   [languages.ru]
     languageName = 'Русский'
@@ -24,6 +29,8 @@ defaultContentLanguageInSubdir = true
     title = 'Блокчейн TALER'
     [languages.ru.params]
       languageCode = 'ru'
+      ogLocale = 'ru_RU'
+      description = 'Блокчейн TALER — современная гибридная PoW/PoS криптовалюта, вдохновлённая историческим европейским Талером. Безопасный, быстрый, децентрализованный.'
 
   [languages.uk]
     languageName = 'Українська'
@@ -31,12 +38,24 @@ defaultContentLanguageInSubdir = true
     title = 'Блокчейн TALER'
     [languages.uk.params]
       languageCode = 'uk'
+      ogLocale = 'uk_UA'
+      description = 'Блокчейн TALER — сучасна гібридна PoW/PoS криптовалюта, натхненна історичним європейським Талером. Безпечний, швидкий, децентралізований.'
 
 [params]
-  description = 'TALER Blockchain - Modern cryptocurrency platform'
+  description = 'TALER Blockchain — a modern hybrid PoW/PoS cryptocurrency inspired by the historic European Thaler.'
   primaryColor = '#1B8FBA'
+  ogImage = '/images/talerlogo2.png'
+  twitterSite = '@TalerBlockchain'
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[outputs]
+  home = ['HTML', 'RSS', 'SITEMAP']

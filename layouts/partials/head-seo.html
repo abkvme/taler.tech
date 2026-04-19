@@ -1,0 +1,136 @@
+{{- /* Per-page title: page title + site title, home just uses site title */ -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $pageTitle := .Title -}}
+{{- $title := cond .IsHome $siteTitle (printf "%s — %s" $pageTitle $siteTitle) -}}
+
+{{- /* Description: prefer page Description, then Site.Params.description */ -}}
+{{- $desc := or .Description .Params.description .Site.Params.description "" -}}
+{{- $desc = printf "%s" $desc -}}
+
+{{- /* Canonical URL */ -}}
+{{- $canonical := .Permalink -}}
+
+{{- /* OG image (absolute URL) */ -}}
+{{- $ogImage := "" -}}
+{{- with .Params.image -}}
+  {{ $ogImage = . | absURL }}
+{{- else -}}
+  {{ with .Site.Params.ogImage }}{{ $ogImage = . | absURL }}{{ end }}
+{{- end -}}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ $canonical }}">
+
+{{- /* hreflang alternates for all translations + x-default */ -}}
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{- end }}
+{{- with .Site.Home.AllTranslations }}
+{{- range . -}}
+  {{- if eq .Language.Lang $.Site.Language.Lang -}}{{- end -}}
+{{- end -}}
+{{- end }}
+{{- /* x-default points to the default-language version of this page */ -}}
+{{- $defaultLang := "en" -}}
+{{- $xdefault := "" -}}
+{{- if eq .Language.Lang $defaultLang -}}{{ $xdefault = .Permalink }}{{- end -}}
+{{- range .AllTranslations -}}
+  {{- if eq .Language.Lang $defaultLang -}}{{ $xdefault = .Permalink }}{{- end -}}
+{{- end -}}
+{{- if not $xdefault -}}{{ $xdefault = printf "%s%s/" .Site.BaseURL $defaultLang }}{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ $xdefault }}">
+
+{{- /* Open Graph */ -}}
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:type" content="{{ cond .IsHome "website" "article" }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ $canonical }}">
+{{- with .Site.Params.ogLocale }}
+<meta property="og:locale" content="{{ . }}">
+{{- end }}
+{{- range .AllTranslations }}
+  {{- with .Site.Params.ogLocale }}
+<meta property="og:locale:alternate" content="{{ . }}">
+  {{- end }}
+{{- end }}
+{{- if $ogImage }}
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:alt" content="{{ $title }}">
+{{- end }}
+{{- if and .IsPage .Date (not .Date.IsZero) }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- if and .IsPage .Lastmod (not .Lastmod.IsZero) }}
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+
+{{- /* Twitter Card */ -}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{- with .Site.Params.twitterSite }}
+<meta name="twitter:site" content="{{ . }}">
+{{- end }}
+{{- if $ogImage }}
+<meta name="twitter:image" content="{{ $ogImage }}">
+{{- end }}
+
+{{- /* Robots */ -}}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+{{- /* Sitemap discovery */ -}}
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+{{- /* JSON-LD: Organization + WebSite on home, BreadcrumbList on sections */ -}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TALER Blockchain",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ "/images/talerlogo2.png" | absURL }}",
+  "description": {{ $desc | jsonify | safeJS }},
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TALER Blockchain",
+  "url": "{{ .Site.BaseURL }}",
+  "inLanguage": "{{ .Language.Lang }}"
+}
+</script>
+{{- end }}
+
+{{- /* BreadcrumbList for section and single pages */ -}}
+{{- if and (not .IsHome) (or .IsSection .IsPage) }}
+{{- $crumbs := slice (dict "name" (i18n "home") "url" (printf "/%s/" .Language.Lang)) -}}
+{{- if and .IsPage .Section }}
+  {{- $sectionURL := printf "/%s/%s/" .Language.Lang .Section -}}
+  {{- $crumbs = $crumbs | append (dict "name" (i18n .Section | default (humanize .Section)) "url" $sectionURL) -}}
+  {{- $crumbs = $crumbs | append (dict "name" .Title "url" .Permalink) -}}
+{{- else if .IsSection }}
+  {{- $crumbs = $crumbs | append (dict "name" .Title "url" .Permalink) -}}
+{{- end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- range $i, $c := $crumbs }}{{ if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "name": {{ $c.name | jsonify | safeJS }},
+      "item": {{ $c.url | absURL | jsonify | safeJS }}
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}

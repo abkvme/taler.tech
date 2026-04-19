@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALER Blockchain — Hybrid PoW/PoS Cryptocurrency</title>
+    <meta name="description" content="TALER Blockchain — a hybrid PoW/PoS cryptocurrency inspired by the historic European Thaler. Download wallets, run a node, explore docs.">
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <link rel="alternate" hreflang="en" href="https://taler.tech/en/">
+    <link rel="alternate" hreflang="be" href="https://taler.tech/be/">
+    <link rel="alternate" hreflang="ru" href="https://taler.tech/ru/">
+    <link rel="alternate" hreflang="uk" href="https://taler.tech/uk/">
+    <link rel="alternate" hreflang="x-default" href="https://taler.tech/en/">
+
+    <meta property="og:site_name" content="TALER Blockchain">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TALER Blockchain — Hybrid PoW/PoS Cryptocurrency">
+    <meta property="og:description" content="TALER Blockchain — a hybrid PoW/PoS cryptocurrency inspired by the historic European Thaler.">
+    <meta property="og:url" content="https://taler.tech/en/">
+    <meta property="og:image" content="https://taler.tech/images/talerlogo2.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TALER Blockchain">
+    <meta name="twitter:description" content="Hybrid PoW/PoS cryptocurrency inspired by the historic European Thaler.">
+    <meta name="twitter:image" content="https://taler.tech/images/talerlogo2.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "TALER Blockchain",
+      "url": "https://taler.tech/",
+      "inLanguage": ["en", "be", "ru", "uk"]
+    }
+    </script>
+
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 2rem; background: #1B8FBA; color: #fff; text-align: center; }
+        .container { max-width: 640px; margin: 4rem auto; }
+        h1 { margin-bottom: 1rem; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 0.5rem 0; }
+        a { color: #fff; text-decoration: underline; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TALER Blockchain</h1>
+        <p>A hybrid PoW/PoS cryptocurrency inspired by the historic European Thaler.</p>
+        <p>Choose your language / Выберите язык / Абярыце мову / Оберіть мову:</p>
+        <ul>
+            <li><a href="/en/" hreflang="en">English</a></li>
+            <li><a href="/be/" hreflang="be">Беларуская</a></li>
+            <li><a href="/ru/" hreflang="ru">Русский</a></li>
+            <li><a href="/uk/" hreflang="uk">Українська</a></li>
+        </ul>
+    </div>
+    <script>
+        (function() {
+            var supported = ['en', 'be', 'ru', 'uk'];
+            var saved = null;
+            try { saved = localStorage.getItem('talerLang'); } catch (e) {}
+            var browser = (navigator.language || 'en').substring(0, 2);
+            var target = saved && supported.indexOf(saved) !== -1
+                ? saved
+                : (supported.indexOf(browser) !== -1 ? browser : 'en');
+            window.location.replace('/' + target + '/');
+        })();
+    </script>
+</body>
+</html>

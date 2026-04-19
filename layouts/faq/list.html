@@ -1,4 +1,23 @@
 {{ define "main" }}
+{{- $faqs := slice "faq1" "faq2" "faq3" "faq4" "faq5" "faq6" "faq7" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $id := $faqs }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ i18n (printf "%s_q" $id) | jsonify | safeJS }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ i18n (printf "%s_a" $id) | jsonify | safeJS }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
 <div class="container py-5">
     <h1 class="section-title text-center mb-5">{{ .Title }}</h1>
 

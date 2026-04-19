@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
+
+    {{- partial "head-seo.html" . }}
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,14 +13,25 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#1B8FBA">
 
+    <!-- Preconnect to CDNs for faster critical CSS -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome (non-blocking) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- RSS -->
+    {{- range .AlternativeOutputFormats }}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
+    {{- end }}
 </head>
 <body>
     <!-- Navigation -->
@@ -134,33 +145,19 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!-- Language Detection & Persistence Script -->
+    <!-- Language preference persistence -->
     <script>
         (function() {
-            // Get saved language preference
-            const savedLang = localStorage.getItem('talerLang');
-            const currentLang = '{{ .Language.Lang }}';
-            const browserLang = navigator.language.substring(0, 2);
-            const supportedLangs = ['en', 'ru', 'be', 'uk'];
-
-            // On first visit, detect browser language
-            if (!savedLang && window.location.pathname === '/') {
-                const targetLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
-                window.location.href = '/' + targetLang + '/';
-            }
-
-            // Save language preference when user clicks language link
-            document.querySelectorAll('[data-lang]').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    localStorage.setItem('talerLang', this.getAttribute('data-lang'));
+            var currentLang = '{{ .Language.Lang }}';
+            document.querySelectorAll('[data-lang]').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    try { localStorage.setItem('talerLang', this.getAttribute('data-lang')); } catch (e) {}
                 });
             });
-
-            // Save current language
             if (currentLang) {
-                localStorage.setItem('talerLang', currentLang);
+                try { localStorage.setItem('talerLang', currentLang); } catch (e) {}
             }
         })();
     </script>
