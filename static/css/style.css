@@ -170,23 +170,15 @@ main {
     color: inherit;
 }
 
-/* Favorite marker for the recommended card in a list row */
+/* Favorite marker — same palette as the rest of the page so the card blends
+   visually, only the small top-right badge identifies it as recommended. */
 .social-link-card.favorite-card {
     position: relative;
-    border-color: #d4af37;
-    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.18);
-}
-.social-link-card.favorite-card:hover {
-    border-color: #d4af37;
-    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.28);
-}
-.social-link-card.favorite-card i {
-    color: #d4af37;
 }
 .social-link-card .favorite-badge {
     position: absolute;
     top: 10px; right: 10px;
-    background: #d4af37;
+    background: var(--taler-blue);
     color: #fff;
     font-size: 11px;
     font-weight: 700;
