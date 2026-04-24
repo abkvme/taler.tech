@@ -157,6 +157,9 @@ other = "Обозреватели блокчейна"
 [block_explorer]
 other = "Обозреватель блоков"
 
+[favorite]
+other = "Рекомендуем"
+
 [explorer_desc]
 other = "Исследуйте блоки и транзакции"
 

@@ -157,6 +157,9 @@ other = "Blockchain Explorers"
 [block_explorer]
 other = "Block Explorer"
 
+[favorite]
+other = "Favorite"
+
 [exchanges]
 other = "Exchanges"
 

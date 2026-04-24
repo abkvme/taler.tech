@@ -170,6 +170,39 @@ main {
     color: inherit;
 }
 
+/* Favorite marker for the recommended card in a list row */
+.social-link-card.favorite-card {
+    position: relative;
+    border-color: #d4af37;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.18);
+}
+.social-link-card.favorite-card:hover {
+    border-color: #d4af37;
+    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.28);
+}
+.social-link-card.favorite-card i {
+    color: #d4af37;
+}
+.social-link-card .favorite-badge {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: #d4af37;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 999px;
+    line-height: 1;
+    display: inline-flex; align-items: center; gap: 4px;
+}
+.social-link-card .favorite-badge i {
+    font-size: 11px;
+    color: #fff;
+    margin: 0;
+}
+
 /* Buttons */
 .btn-taler {
     background-color: var(--taler-blue);

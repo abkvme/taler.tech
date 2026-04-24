@@ -157,6 +157,9 @@ other = "Аглядальнікі блакчэйна"
 [block_explorer]
 other = "Аглядальнік блокаў"
 
+[favorite]
+other = "Рэкамендуем"
+
 [explorer_desc]
 other = "Даследуйце блокі і транзакцыі"
 
