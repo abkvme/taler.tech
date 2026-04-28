@@ -397,6 +397,75 @@ docker compose up -d
 
 ---
 
+## Running in Rootless Mode
+
+If you run Docker in [rootless mode](https://docs.docker.com/engine/security/rootless/),
+the default `rootlesskit` port forwarder can silently fail to expose the
+TALER P2P port `23153` on the host. The container starts normally and `docker
+compose ps` shows the port mapping, but no incoming peer connections arrive
+and `getconnectioncount` stays at `0`.
+
+The fix is a one-time global Docker user-service override that switches the
+rootless network/port driver to `pasta` (a modern, faster replacement for
+`slirp4netns`).
+
+### 1. Install `pasta`
+
+`pasta` ships with the `passt` package and is not preinstalled on most
+distros. Install it system-wide:
+
+```bash
+# Debian / Ubuntu
+sudo apt install passt
+
+# Fedora / RHEL / CentOS Stream
+sudo dnf install passt
+
+# Arch / Manjaro
+sudo pacman -S passt
+
+# openSUSE
+sudo zypper install passt
+```
+
+Verify the binary is on `PATH`:
+
+```bash
+pasta --version
+```
+
+### 2. Create the override
+
+Edit (or create) `~/.config/systemd/user/docker.service.d/override.conf`:
+
+```ini
+[Service]
+Environment=DOCKERD_ROOTLESS_ROOTLESSKIT_NET=pasta
+```
+
+### 3. Reload and restart the rootless Docker daemon
+
+```bash
+systemctl --user daemon-reload
+systemctl --user restart docker
+```
+
+### 4. Restart the TALER container
+
+```bash
+docker compose down
+docker compose up -d
+```
+
+After this, the published P2P port `23153` is reachable from the host and
+remote peers, and the node accepts inbound connections normally. No changes
+to `docker-compose.yml` or `taler.conf` are required.
+
+> This setting applies only to **rootless Docker**. Standard (rootful) Docker
+> installations do not need it.
+
+---
+
 ## Troubleshooting
 
 ### Container Won't Start

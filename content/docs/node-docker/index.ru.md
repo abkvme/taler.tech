@@ -397,6 +397,75 @@ docker compose up -d
 
 ---
 
+## Запуск в Rootless-режиме
+
+Если вы используете Docker в [rootless-режиме](https://docs.docker.com/engine/security/rootless/),
+стандартный механизм проброса портов `rootlesskit` может незаметно не
+опубликовать P2P-порт TALER `23153` на хосте. Контейнер запускается
+нормально, `docker compose ps` показывает проброс порта, но входящие
+подключения не приходят, и `getconnectioncount` остаётся равным `0`.
+
+Решение — одноразовая глобальная настройка пользовательской службы Docker,
+которая переключает сетевой драйвер rootless на `pasta` (современная и более
+быстрая замена `slirp4netns`).
+
+### 1. Установите `pasta`
+
+`pasta` поставляется в составе пакета `passt` и не предустановлена в
+большинстве дистрибутивов. Установите её в систему:
+
+```bash
+# Debian / Ubuntu
+sudo apt install passt
+
+# Fedora / RHEL / CentOS Stream
+sudo dnf install passt
+
+# Arch / Manjaro
+sudo pacman -S passt
+
+# openSUSE
+sudo zypper install passt
+```
+
+Проверьте, что бинарь доступен в `PATH`:
+
+```bash
+pasta --version
+```
+
+### 2. Создайте override
+
+Отредактируйте (или создайте) файл `~/.config/systemd/user/docker.service.d/override.conf`:
+
+```ini
+[Service]
+Environment=DOCKERD_ROOTLESS_ROOTLESSKIT_NET=pasta
+```
+
+### 3. Перезагрузите и перезапустите rootless-демон Docker
+
+```bash
+systemctl --user daemon-reload
+systemctl --user restart docker
+```
+
+### 4. Перезапустите контейнер TALER
+
+```bash
+docker compose down
+docker compose up -d
+```
+
+После этого опубликованный P2P-порт `23153` становится доступен с хоста и
+от удалённых узлов, нода принимает входящие подключения. Никаких изменений
+в `docker-compose.yml` или `taler.conf` не требуется.
+
+> Эта настройка применима только к **rootless Docker**. Стандартные
+> (rootful) установки Docker в ней не нуждаются.
+
+---
+
 ## Устранение неполадок
 
 ### Контейнер не запускается

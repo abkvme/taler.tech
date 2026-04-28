@@ -5,6 +5,24 @@ description: "Полная документация по блокчейну TALE
 
 Добро пожаловать в документацию блокчейна TALER. Здесь вы найдете исчерпывающие руководства и справочники по всем аспектам платформы.
 
+## Исходный код и репозитории
+
+Экосистема TALER полностью открыта. Все проекты находятся на GitHub:
+
+| Проект | Репозиторий | Назначение |
+|---|---|---|
+| **Taler Core** | [github.com/abkvme/taler](https://github.com/abkvme/taler) | Узел сети (`talerd`), CLI (`taler-cli`) и GUI-кошелёк (`taler-qt`). Актуальные релизы для Linux, macOS и Windows. |
+| **Taler Explorer** | [github.com/abkvme/taler-explorer](https://github.com/abkvme/taler-explorer) | Обозреватель блокчейна, на котором работает [explorer.taler.tech](https://explorer.taler.tech/). Однофайловый Go-сервис, общающийся с `talerd` по JSON-RPC. |
+| **taler.tech** | [github.com/abkvme/taler.tech](https://github.com/abkvme/taler.tech) | Этот сайт документации (Hugo). |
+| **Legacy Core** | [github.com/cryptadev/taler](https://github.com/cryptadev/taler) | Исторические исходники Taler до v0.17.2.6. Для всего нового используйте Taler Core выше. |
+
+Готовые контейнерные образы опубликованы в GitHub Container Registry:
+
+```
+docker pull ghcr.io/abkvme/taler:latest             # Узел Taler
+docker pull ghcr.io/abkvme/taler-explorer:latest    # Обозреватель
+```
+
 ## Помощь в развитии документации
 
 Эта документация поддерживается сообществом и открыта для вклада. Вы можете помочь улучшить её:

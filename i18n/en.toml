@@ -371,7 +371,7 @@ other = "Technical Foundation"
 other = "TALER is built upon the proven foundation of Bitcoin Core, inheriting its robust UTXO model, transaction validation framework, and security architecture. This Bitcoin-based legacy ensures compatibility with well-tested cryptographic standards and provides a solid foundation trusted by millions of users worldwide."
 
 [taler_improvements_text]
-other = "Building on this foundation, TALER introduces significant innovations including a hybrid Proof-of-Work/Proof-of-Stake consensus mechanism, the memory-hard Lyra2Z mining algorithm for ASIC resistance, and the Dark Gravity Wave difficulty adjustment system. Launched in September 2017, TALER has evolved into a mature blockchain platform with native support for modern architectures including Apple Silicon (M1/M2/M3+) and ARM64 servers."
+other = "Building on this foundation, TALER introduces significant innovations including a hybrid Proof-of-Work/Proof-of-Stake consensus mechanism, the memory-hard Lyra2Z mining algorithm for ASIC resistance, and the Dark Gravity Wave difficulty adjustment system. Launched in September 2017, TALER has evolved into a mature blockchain platform with native binaries for all major operating systems on both x86_64 and ARM64."
 
 [hybrid_consensus]
 other = "Hybrid Consensus Mechanism"
@@ -461,7 +461,7 @@ other = "Network Port"
 other = "Platform Support"
 
 [platform_support_text]
-other = "TALER provides native binaries for all major operating systems and architectures, with first-class support for modern Apple Silicon Macs and ARM64 servers:"
+other = "TALER provides native binaries for all major operating systems and architectures (x86_64 and ARM64):"
 
 [node_operator_docs]
 other = "Node Operator"
