@@ -66,9 +66,40 @@
             <div class="px-4">
                 <h1 class="section-title">{{ .Title }}</h1>
 
+                {{- if and .Lastmod (not .Lastmod.IsZero) }}
+                <p class="text-muted small mb-4">
+                    <i class="fas fa-clock me-1"></i>
+                    {{ i18n "last_updated" }}:
+                    <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006-01-02" }}</time>
+                </p>
+                {{- end }}
+
                 <article class="doc-content">
                     {{ .Content }}
                 </article>
+
+                {{- $related := .Site.RegularPages.RelatedIndices . "section" "title" | first 5 -}}
+                {{- if $related }}
+                <section class="related-docs mt-5">
+                    <h2 class="text-taler mb-3"><i class="fas fa-link me-2"></i>{{ i18n "related_docs" }}</h2>
+                    <div class="row g-3">
+                        {{- range $related }}
+                        {{- if eq .Language.Lang $.Language.Lang }}
+                        <div class="col-md-6">
+                            <a href="{{ .RelPermalink }}" class="card related-card h-100 text-decoration-none">
+                                <div class="card-body">
+                                    <h6 class="card-title text-taler mb-1">{{ .Title }}</h6>
+                                    {{- with .Description | default (.Summary | plainify | truncate 110) }}
+                                    <p class="card-text text-muted small mb-0">{{ . }}</p>
+                                    {{- end }}
+                                </div>
+                            </a>
+                        </div>
+                        {{- end }}
+                        {{- end }}
+                    </div>
+                </section>
+                {{- end }}
 
                 <!-- Help Section -->
                 <section class="alert bg-taler-light mt-5">

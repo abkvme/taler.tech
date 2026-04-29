@@ -115,4 +115,36 @@
     </section>
 
 </div>
+
+{{- /* SoftwareApplication JSON-LD — one entry covering the cross-platform
+       wallet/node binaries. Eligible for software-app rich results. */ -}}
+{{- $releasesUrl := "https://github.com/abkvme/taler/releases/latest" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TALER Blockchain",
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "applicationCategory": "FinanceApplication",
+  "applicationSubCategory": "Cryptocurrency Wallet",
+  "operatingSystem": "Windows, macOS, Linux",
+  "description": {{ .Description | default .Site.Params.description | jsonify | safeJS }},
+  "downloadUrl": {{ $releasesUrl | jsonify | safeJS }},
+  "softwareRequirements": "x86_64 or ARM64; 64-bit OS; ~10 GB disk for full-node",
+  "image": {{ "/images/og-default.png" | absURL | jsonify | safeJS }},
+  "inLanguage": "{{ .Language.Lang }}",
+  "license": "https://github.com/abkvme/taler/blob/master/COPYING",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TALER Blockchain",
+    "url": {{ .Site.BaseURL | jsonify | safeJS }}
+  }
+}
+</script>
 {{ end }}

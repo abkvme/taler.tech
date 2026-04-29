@@ -4,9 +4,31 @@ defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
 
+# Drive page .Lastmod from the most recent git commit that touched the file.
+# Required for the "Last updated YYYY-MM-DD" line on docs pages and for the
+# `dateModified` field in TechArticle / Article JSON-LD.
+enableGitInfo = true
+
 # No tagged or categorised content yet — keep Hugo from emitting empty
 # /categories/ and /tags/ index pages that would otherwise be indexed.
 disableKinds = ['taxonomy', 'term']
+
+# Related-content index drives the "Related docs" block at the bottom of
+# every docs single page. Section is the strongest signal because docs
+# don't have tags or categories. Kind/lang ensure we only relate within
+# the same content type and language.
+[related]
+  threshold = 60
+  toLower = false
+  [[related.indices]]
+    name = "section"
+    weight = 80
+  [[related.indices]]
+    name = "title"
+    weight = 30
+  [[related.indices]]
+    name = "kind"
+    weight = 20
 
 [languages]
   [languages.en]

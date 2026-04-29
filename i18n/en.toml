@@ -554,3 +554,9 @@ other = "Back to Home"
 other = "Go Back"
 [404_helpful_links]
 other = "Maybe one of these will help"
+
+[last_updated]
+other = "Last updated"
+
+[related_docs]
+other = "Related"

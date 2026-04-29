@@ -542,3 +542,9 @@ other = "На галоўную"
 other = "Назад"
 [404_helpful_links]
 other = "Магчыма, вам дапаможа адно з гэтага"
+
+[last_updated]
+other = "Апошняе абнаўленне"
+
+[related_docs]
+other = "Звязаныя"

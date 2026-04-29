@@ -43,6 +43,21 @@ main {
     padding: 80px 0;
 }
 
+/* Related docs cards on docs single pages */
+.related-docs .related-card {
+    border: 1px solid #e0e0e0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.related-docs .related-card:hover {
+    border-color: var(--taler-blue);
+    box-shadow: 0 4px 10px rgba(27, 143, 186, 0.12);
+    transform: translateY(-2px);
+}
+.related-docs .related-card:focus-visible {
+    outline: 2px solid var(--taler-blue);
+    outline-offset: 2px;
+}
+
 /* Security policy — give the markdown content readable rhythm */
 .security-policy h2 {
     color: var(--taler-blue);
