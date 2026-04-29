@@ -501,3 +501,76 @@ other = "Пра праект"
 
 [history]
 other = "Гісторыя"
+
+# About / Contact page
+[about_lead]
+other = "Адкрытая, гібрыдная PoW/PoS крыптавалюта, запушчаная ў верасні 2017 года. Распрацоўваецца і падтрымліваецца міжнароднай супольнасцю кантрыбутараў."
+
+[about_overview]
+other = "Што такое TALER"
+
+[about_oss_title]
+other = "Адкрыты код"
+[about_oss_desc]
+other = "Выпускаецца пад дазвольнай ліцэнзіяй. Зыходны код, пайплайн зборкі і рэлізы даступныя на GitHub."
+
+[about_community_title]
+other = "Кіруецца супольнасцю"
+[about_community_desc]
+other = "TALER не мае адзінага карпаратыўнага ўладальніка. Распрацоўка, майнінг, стэйкінг і кіраванне — адкрытыя для ўсіх."
+
+[about_history_title]
+other = "З 2017 года"
+[about_history_desc]
+other = "Genesis-блок 13 верасня 2017 года. Бесперапынная распрацоўка праз чатыры halving’і, наступны чакаецца ў канцы 2027 года."
+
+[about_at_a_glance]
+other = "Каротка"
+
+[about_genesis_label]
+other = "Genesis"
+[about_consensus_label]
+other = "Кансэнсус"
+[about_consensus_value]
+other = "Гібрыдны Proof-of-Work / Proof-of-Stake"
+[about_difficulty_label]
+other = "Складанасць"
+[about_license_label]
+other = "Ліцэнзія"
+
+[about_get_in_touch]
+other = "Звяжыцеся з намі"
+
+[about_email_title]
+other = "Электронная пошта"
+[about_telegram_title]
+other = "Telegram"
+[about_github_title]
+other = "GitHub"
+[about_discussions_title]
+other = "Абмеркаванні"
+[about_discussions_desc]
+other = "Адкрытыя пытанні і прапановы ў GitHub Discussions."
+[about_issues_title]
+other = "Адсочванне памылак"
+[about_issues_desc]
+other = "Паведамляйце пра памылкі і запыты функцый."
+[about_security_title]
+other = "Бяспека"
+[about_security_desc]
+other = "Палітыка раскрыцця ўразлівасцей (security.txt)."
+
+[about_see_all_links]
+other = "Усе спасылкі"
+
+# 404 page
+[404_title]
+other = "Старонка не знойдзена"
+[404_lead]
+other = "Старонка, якую вы шукаеце, не існуе, была перамешчана або ніколі не існавала."
+[404_back_home]
+other = "На галоўную"
+[404_go_back]
+other = "Назад"
+[404_helpful_links]
+other = "Магчыма, вам дапаможа адно з гэтага"

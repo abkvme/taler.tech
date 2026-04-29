@@ -4,6 +4,10 @@ defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
 
+# No tagged or categorised content yet — keep Hugo from emitting empty
+# /categories/ and /tags/ index pages that would otherwise be indexed.
+disableKinds = ['taxonomy', 'term']
+
 [languages]
   [languages.en]
     languageName = 'English'
@@ -46,6 +50,21 @@ enableRobotsTXT = true
   primaryColor = '#1B8FBA'
   ogImage = '/images/talerlogo2.png'
   twitterSite = '@TalerBlockchain'
+  contactEmail = 'info@taler.tech'
+  securityEmail = 'info@taler.tech'
+
+  # Verified project profiles — used for Organization.sameAs in JSON-LD
+  # and for the About / Contact page contact card grid.
+  [params.social]
+    twitter         = 'https://twitter.com/TalerBlockchain'
+    telegram        = 'https://t.me/talercommunity'
+    github          = 'https://github.com/abkvme/taler'
+    githubLegacy    = 'https://github.com/cryptadev/taler'
+    githubExplorer  = 'https://github.com/abkvme/taler-explorer'
+    discussions     = 'https://github.com/abkvme/taler/discussions'
+    issues          = 'https://github.com/abkvme/taler/issues'
+    explorer        = 'https://explorer.taler.tech/'
+    explorerAlt     = 'https://explorer.talercoin.org/'
 
 [markup]
   [markup.goldmark]

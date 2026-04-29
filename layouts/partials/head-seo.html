@@ -1,6 +1,8 @@
 {{- /* Per-page title: page title + site title, home just uses site title */ -}}
 {{- $siteTitle := .Site.Title -}}
 {{- $pageTitle := .Title -}}
+{{- $is404 := eq .Kind "404" -}}
+{{- if $is404 }}{{ $pageTitle = i18n "404_title" }}{{ end -}}
 {{- $title := cond .IsHome $siteTitle (printf "%s — %s" $pageTitle $siteTitle) -}}
 
 {{- /* Description: prefer page Description, then Site.Params.description */ -}}
@@ -77,13 +79,22 @@
 <meta name="twitter:image" content="{{ $ogImage }}">
 {{- end }}
 
-{{- /* Robots */ -}}
+{{- /* Robots: 404 must not be indexed */ -}}
+{{- if $is404 }}
+<meta name="robots" content="noindex, follow">
+{{- else }}
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{{- end }}
 
 {{- /* Sitemap discovery */ -}}
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
 {{- /* JSON-LD: Organization + WebSite on home, BreadcrumbList on sections */ -}}
+{{- $social := .Site.Params.social | default dict -}}
+{{- $sameAs := slice -}}
+{{- range $key, $url := $social -}}
+  {{- with $url -}}{{ $sameAs = $sameAs | append . }}{{- end -}}
+{{- end -}}
 {{- if .IsHome }}
 <script type="application/ld+json">
 {
@@ -93,7 +104,16 @@
   "url": "{{ .Site.BaseURL }}",
   "logo": "{{ "/images/talerlogo2.png" | absURL }}",
   "description": {{ $desc | jsonify | safeJS }},
-  "sameAs": []
+  {{- with .Site.Params.contactEmail }}
+  "email": {{ . | jsonify | safeJS }},
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": {{ . | jsonify | safeJS }},
+    "contactType": "customer support",
+    "availableLanguage": ["en", "be", "ru", "uk"]
+  },
+  {{- end }}
+  "sameAs": {{ $sameAs | jsonify | safeJS }}
 }
 </script>
 <script type="application/ld+json">

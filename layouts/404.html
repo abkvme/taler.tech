@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="error-code mb-2">404</p>
+                <h1><i class="fas fa-compass me-3"></i>{{ i18n "404_title" }}</h1>
+                <p class="lead">{{ i18n "404_lead" }}</p>
+                <div class="mt-4">
+                    <a href="/{{ .Language.Lang }}/" class="btn btn-light btn-lg me-2">
+                        <i class="fas fa-home me-2"></i>{{ i18n "404_back_home" }}
+                    </a>
+                    <a href="javascript:history.back()" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-arrow-left me-2"></i>{{ i18n "404_go_back" }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">{{ i18n "404_helpful_links" }}</h2>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="social-link-card card h-100">
+                    <a href="/{{ .Language.Lang }}/downloads/">
+                        <i class="fas fa-download"></i>
+                        <h5 class="mt-3">{{ i18n "downloads" }}</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="social-link-card card h-100">
+                    <a href="/{{ .Language.Lang }}/docs/">
+                        <i class="fas fa-book"></i>
+                        <h5 class="mt-3">{{ i18n "docs" }}</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="social-link-card card h-100">
+                    <a href="/{{ .Language.Lang }}/faq/">
+                        <i class="fas fa-question-circle"></i>
+                        <h5 class="mt-3">{{ i18n "faq" }}</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="social-link-card card h-100">
+                    <a href="/{{ .Language.Lang }}/about/">
+                        <i class="fas fa-info-circle"></i>
+                        <h5 class="mt-3">{{ i18n "about" }}</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

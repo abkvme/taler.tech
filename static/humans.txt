@@ -1,0 +1,11 @@
+/* TEAM */
+Project: TALER Blockchain
+Contact: info [at] taler.tech
+Telegram: https://t.me/talercommunity
+GitHub: https://github.com/abkvme/taler
+
+/* SITE */
+Last update: 2026-04-29
+Languages: English, Беларуская, Русский, Українська
+Standards: HTML5, CSS3, JSON-LD
+Components: Hugo, Bootstrap 5, Font Awesome

@@ -1,0 +1,220 @@
+{{ define "main" }}
+{{- $email   := .Site.Params.contactEmail | default "info@taler.tech" -}}
+{{- $social  := .Site.Params.social | default dict -}}
+
+<!-- Hero -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1><i class="fas fa-info-circle me-3"></i>{{ .Title }}</h1>
+                <p class="lead">{{ i18n "about_lead" }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Project Overview -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center mb-5">{{ i18n "about_overview" }}</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body text-center">
+                                <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+                                <h5 class="card-title">{{ i18n "about_oss_title" }}</h5>
+                                <p class="card-text">{{ i18n "about_oss_desc" }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body text-center">
+                                <div class="card-icon"><i class="fas fa-users"></i></div>
+                                <h5 class="card-title">{{ i18n "about_community_title" }}</h5>
+                                <p class="card-text">{{ i18n "about_community_desc" }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body text-center">
+                                <div class="card-icon"><i class="fas fa-history"></i></div>
+                                <h5 class="card-title">{{ i18n "about_history_title" }}</h5>
+                                <p class="card-text">{{ i18n "about_history_desc" }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- At a glance -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center mb-5">{{ i18n "about_at_a_glance" }}</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-taler me-2"></i><strong>{{ i18n "about_genesis_label" }}:</strong> {{ i18n "genesis_date" }}</li>
+                            <li class="mb-2"><i class="fas fa-check text-taler me-2"></i><strong>{{ i18n "about_consensus_label" }}:</strong> {{ i18n "about_consensus_value" }}</li>
+                            <li class="mb-2"><i class="fas fa-check text-taler me-2"></i><strong>{{ i18n "algorithm" }}:</strong> Lyra2Z</li>
+                            <li class="mb-2"><i class="fas fa-check text-taler me-2"></i><strong>{{ i18n "about_difficulty_label" }}:</strong> Dark Gravity Wave</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-taler me-2"></i><strong>{{ i18n "max_supply" }}:</strong> 23,333,333 TLR</li>
+                            <li class="mb-2"><i class="fas fa-check text-taler me-2"></i><strong>{{ i18n "block_time" }}:</strong> {{ i18n "block_time_value" }}</li>
+                            <li class="mb-2"><i class="fas fa-check text-taler me-2"></i><strong>{{ i18n "network_port" }}:</strong> 23153</li>
+                            <li class="mb-2"><i class="fas fa-check text-taler me-2"></i><strong>{{ i18n "about_license_label" }}:</strong> MIT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get in touch -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">{{ i18n "about_get_in_touch" }}</h2>
+        <div class="row g-4 justify-content-center">
+
+            {{- with $email }}
+            <div class="col-md-4">
+                <div class="social-link-card card h-100">
+                    <a href="mailto:{{ . }}">
+                        <i class="fas fa-envelope"></i>
+                        <h5 class="mt-3">{{ i18n "about_email_title" }}</h5>
+                        <p class="text-muted small">{{ . }}</p>
+                    </a>
+                </div>
+            </div>
+            {{- end }}
+
+            {{- with $social.telegram }}
+            <div class="col-md-4">
+                <div class="social-link-card card h-100">
+                    <a href="{{ . }}" target="_blank" rel="noopener external">
+                        <i class="fab fa-telegram"></i>
+                        <h5 class="mt-3">{{ i18n "about_telegram_title" }}</h5>
+                        <p class="text-muted small">{{ replaceRE "^https?://(www\\.)?" "" . }}</p>
+                    </a>
+                </div>
+            </div>
+            {{- end }}
+
+            {{- with $social.github }}
+            <div class="col-md-4">
+                <div class="social-link-card card h-100">
+                    <a href="{{ . }}" target="_blank" rel="noopener external">
+                        <i class="fab fa-github"></i>
+                        <h5 class="mt-3">{{ i18n "about_github_title" }}</h5>
+                        <p class="text-muted small">{{ replaceRE "^https?://(www\\.)?" "" . }}</p>
+                    </a>
+                </div>
+            </div>
+            {{- end }}
+
+            {{- with $social.discussions }}
+            <div class="col-md-4">
+                <div class="social-link-card card h-100">
+                    <a href="{{ . }}" target="_blank" rel="noopener external">
+                        <i class="fas fa-comments"></i>
+                        <h5 class="mt-3">{{ i18n "about_discussions_title" }}</h5>
+                        <p class="text-muted small">{{ i18n "about_discussions_desc" }}</p>
+                    </a>
+                </div>
+            </div>
+            {{- end }}
+
+            {{- with $social.issues }}
+            <div class="col-md-4">
+                <div class="social-link-card card h-100">
+                    <a href="{{ . }}" target="_blank" rel="noopener external">
+                        <i class="fas fa-bug"></i>
+                        <h5 class="mt-3">{{ i18n "about_issues_title" }}</h5>
+                        <p class="text-muted small">{{ i18n "about_issues_desc" }}</p>
+                    </a>
+                </div>
+            </div>
+            {{- end }}
+
+            <div class="col-md-4">
+                <div class="social-link-card card h-100">
+                    <a href="/.well-known/security.txt">
+                        <i class="fas fa-shield-alt"></i>
+                        <h5 class="mt-3">{{ i18n "about_security_title" }}</h5>
+                        <p class="text-muted small">{{ i18n "about_security_desc" }}</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        {{- if .Content }}
+        <div class="row mt-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="content">{{ .Content }}</div>
+            </div>
+        </div>
+        {{- end }}
+
+        <div class="text-center mt-5">
+            <a href="/{{ .Language.Lang }}/links/" class="btn btn-outline-taler btn-lg me-2">
+                <i class="fas fa-link me-2"></i>{{ i18n "about_see_all_links" }}
+            </a>
+            <a href="/{{ .Language.Lang }}/faq/" class="btn btn-taler btn-lg">
+                <i class="fas fa-question-circle me-2"></i>{{ i18n "faq" }}
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- AboutPage / ContactPage JSON-LD -->
+{{- $sameAs := slice -}}
+{{- range $key, $url := $social -}}
+  {{- with $url -}}{{ $sameAs = $sameAs | append . }}{{- end -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["AboutPage", "ContactPage"],
+  "name": {{ .Title | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "inLanguage": "{{ .Language.Lang }}",
+  "description": {{ .Description | jsonify | safeJS }},
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "TALER Blockchain",
+    "url": {{ .Site.BaseURL | jsonify | safeJS }},
+    "logo": {{ "/images/talerlogo2.png" | absURL | jsonify | safeJS }},
+    "email": {{ $email | jsonify | safeJS }},
+    "foundingDate": "2017-09-13",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "email": {{ $email | jsonify | safeJS }},
+        "contactType": "customer support",
+        "availableLanguage": ["en", "be", "ru", "uk"]
+      },
+      {
+        "@type": "ContactPoint",
+        "email": {{ $email | jsonify | safeJS }},
+        "contactType": "security"
+      }
+    ],
+    "sameAs": {{ $sameAs | jsonify | safeJS }}
+  }
+}
+</script>
+{{ end }}
