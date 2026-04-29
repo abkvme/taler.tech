@@ -1,0 +1,172 @@
+sections:
+  - title: "About the project"
+    icon: "fa-info-circle"
+    items:
+      - q: "What is TALER?"
+        a: |
+          TALER (ticker **TLR**) is a hybrid Proof-of-Work / Proof-of-Stake cryptocurrency originally launched in 2017. The codebase is a Bitcoin Core fork using the **Lyra2Z** mining algorithm, with PoS activated at block 130,000 in February 2019. It is positioned in community lore as "the first Belarusian cryptocurrency."
+      - q: "When was TALER launched?"
+        a: |
+          The first transaction occurred on **13 September 2017** and the project was publicly announced on **6 October 2017**. The chain was originally created on walletbuilders.com — a service that lets anyone produce a Litecoin clone in minutes — and started life on the **scrypt** algorithm before forking to Lyra2Z.
+      - q: "Who created TALER?"
+        a: |
+          Two people: **Denis Lavnikevich** (an economic columnist) and **Lavrinenko** (an IT manager). They allocated themselves a **10% premine** — 2,333,333 TLR — at genesis. By February 2018 both publicly announced they were leaving the project; what actually happened, the controversies around the premine, and the schism that followed are documented in detail on the [history page](/en/docs/history/).
+      - q: "Is there a single 'official' team behind TALER today?"
+        a: |
+          No. By the early 2020s all three of the original 2018 camps (Lavnikevich's "Creator camp," the Veyshnoria team, and TalerOnline) had effectively walked away. Since then the chain has been carried by **independent developers** plus the community — miners, stakers, exchange operators, and people running nodes. There is no company, no foundation, no premine left to argue over.
+      - q: "What is 'Veyshnoria' and why does it keep coming up?"
+        a: |
+          Veyshnoria is a fictional country invented in July 2017 for the Russian–Belarusian Zapad-2017 military exercise. The Belarusian internet adopted it as a civic meme — an idealized Belarus, complete with a flag, anthem, e-passports, and a claimed national currency: **TALER**. That association is why the name keeps appearing in TALER's history. In August 2022 a Belarusian court ruled Veyshnoria's social-media accounts and materials *"extremist."*
+
+  - title: "Technology"
+    icon: "fa-microchip"
+    items:
+      - q: "What algorithm does TALER use?"
+        a: |
+          - **Blocks 0–9,999:** scrypt (the original launch algorithm)
+          - **Blocks 10,000+:** **Lyra2Z** — a memory-hard, ASIC-resistant PoW algorithm
+
+          The hardfork to Lyra2Z happened at block 10,000 on **24 November 2017**, after Chinese ASIC operators took over most of the scrypt hashrate.
+      - q: "Is TALER PoW, PoS, or both?"
+        a: |
+          Both. PoW has run since genesis; PoS was activated at **block 130,000 on 10 February 2019**. PoW and PoS blocks coexist on the same chain — each with its own difficulty target and block-spacing target (60 seconds for PoW, 140 seconds for PoS).
+      - q: "What is the maximum supply?"
+        a: |
+          **23,333,333 TLR**, with a smallest unit of 0.00000001 TLR. The genesis premine was **2,333,283 TLR** (~10%). As of March 2026, circulating supply is approximately 19.5 million TLR.
+      - q: "How are block rewards split?"
+        a: |
+          Since the PoS activation at block 130,000, each PoW block reward is split **70% to the miner / 30% to staking**, and the PoS subsidy is calculated as `PoS_reward = PoW_reward × 30 / 70`.
+      - q: "When are halvings?"
+        a: |
+          Every **1,050,000 PoW blocks** (~2.5 years). Four halvings have occurred. Current rewards (as of March 2026):
+
+          - **PoW:** 0.4375 TLR per block
+          - **PoS:** 0.1875 TLR per block
+
+          The fifth halving is expected around **December 2027**.
+      - q: "What are the key fork heights?"
+        a: |
+          | Height | Date | Change |
+          |---|---|---|
+          | 0 | 13 Sep 2017 | Genesis (scrypt PoW) |
+          | 10,000 | 24 Nov 2017 | Lyra2Z + Dark Gravity Wave v1 |
+          | 32,256 | — | BIP65/66/CSV/SegWit |
+          | 130,000 | 10 Feb 2019 | PoS activation, PoW reward split |
+          | 250,000 | — | DGW v2 (120-block window) |
+      - q: "What address formats does TALER support?"
+        a: |
+          - **P2PKH (Base58):** addresses begin with **T**
+          - **P2SH (Base58):** prefix byte 50
+          - **Bech32 (SegWit):** human-readable prefix **tlr** (e.g. `tlr1q...`)
+          - **Extended public keys:** standard BIP32 HD derivation
+      - q: "What is the default P2P port?"
+        a: |
+          **23153**. Protocol version is 70020.
+
+  - title: "Wallets, branches, and downloads"
+    icon: "fa-wallet"
+    items:
+      - q: "Where do I download the wallet?"
+        a: |
+          From the actively developed branch on GitHub: **[github.com/abkvme/taler/releases](https://github.com/abkvme/taler/releases)**. Builds are available for Windows, macOS (Apple Silicon), Linux x86_64, and Linux ARM64.
+      - q: "What is the difference between the 0.17 and 0.19 branches?"
+        a: |
+          Both branches run on the same chain — same protocol, same network, fully interoperable as nodes.
+
+          - **0.17 ([cryptadev/taler](https://github.com/cryptadev/taler))** — long-running maintenance line. Quietly carried the project alone from 2020 to 2026. Latest release: 0.17.2.7 (March 2026). Still actively maintained in parallel.
+          - **0.19 ([abkvme/taler](https://github.com/abkvme/taler))** — modern, aggressively updated branch started in 2025. Native Apple Silicon and Linux ARM64 builds, modern wallet database, multi-arch Docker images, full CI/CD, staking UI, theme-adaptive icons, 33 languages.
+
+          The 0.19 wallet is **not backward compatible** with 0.17 — once a wallet.dat is migrated, there is no way back. The blockchain itself is unchanged, so the two branches just talk to each other on the network.
+      - q: "Should I use 0.17 or 0.19?"
+        a: |
+          For new users: **0.19**. It has native Apple Silicon support, modern builds, and the active development. Use 0.17 only if you have a specific reason to stay on the older branch (such as an existing 0.17 wallet you do not want to migrate). **Always back up `wallet.dat` before upgrading to 0.19**, since the wallet database modernization is one-way.
+      - q: "Is there an Android / mobile wallet?"
+        a: |
+          No. An Android wallet was *almost* shipped in 2019 and was eventually abandoned. There is currently no official mobile wallet.
+      - q: "Where is `wallet.dat` stored?"
+        a: |
+          | OS | Path |
+          |---|---|
+          | Windows | `%APPDATA%\TALER\wallet.dat` |
+          | macOS | `~/Taler/wallet.dat` |
+          | Linux | `~/.taler/wallet.dat` |
+      - q: "Is the wallet encrypted by default?"
+        a: |
+          **No.** A new TALER wallet stores private keys in plaintext until you explicitly encrypt it. Encrypt your wallet via Settings → Encrypt Wallet (or `taler-cli encryptwallet "passphrase"`). The encryption uses AES-256-CBC with an SHA-512–derived key, and a strong passphrase (20+ characters) is strongly recommended.
+      - q: "How do I back up my wallet?"
+        a: |
+          Close `taler-qt`, then copy `wallet.dat` to a secure location (encrypted external drive, encrypted cloud container, etc.). Test the backup by restoring it on a separate system before relying on it. There is **no "forgot password"** — losing both the wallet file and its passphrase means your coins are permanently gone.
+      - q: "What happens if I lose my passphrase or `wallet.dat`?"
+        a: |
+          Your coins are **permanently lost**. No company, developer, or authority can restore them. This is the same trade-off as Bitcoin: you control the keys, and that control comes with full responsibility.
+
+  - title: "Mining and staking"
+    icon: "fa-server"
+    items:
+      - q: "Can I mine TALER?"
+        a: |
+          Yes. PoW uses Lyra2Z, which is memory-hard and historically GPU/CPU friendly. There are several community-run pools; check the current list of seed nodes and pools at [taler.tech](https://taler.tech/) and on the [Nodes page in the wallet](/en/docs/node-mining/).
+      - q: "How long does it take for newly mined coins to be spendable?"
+        a: |
+          **20 blocks** (coinbase maturity).
+      - q: "How does staking work?"
+        a: |
+          Staking weight follows the formula:
+
+          ```
+          weight = min(age_in_days, 99) × min(value_in_TLR, 9999)
+          ```
+
+          Practical implications:
+
+          - Coins must be **unspent for at least 2 days** to begin staking
+          - Age stops contributing past **90 days** (hard cap at 99 days)
+          - A single UTXO contributes at most **9,999 TLR** of value to its weight — splitting very large balances across multiple UTXOs can therefore stake more efficiently
+      - q: "How do I start staking?"
+        a: |
+          In the 0.19 wallet, the **Overview** page has a built-in staking control: choose a duration, click start, and the wallet keeps the wallet unlocked for the chosen window with a live countdown and auto-relock. The wallet must be running, online, and unlocked for staking to occur.
+      - q: "Are there ASICs for TALER?"
+        a: |
+          For the original scrypt phase, yes — Chinese ASIC operators dominated the early hashrate. After the 2017 fork to Lyra2Z, the chain has remained largely ASIC-resistant in practice.
+
+  - title: "Network and infrastructure"
+    icon: "fa-network-wired"
+    items:
+      - q: "Where can I see the network state?"
+        a: |
+          - **Block explorer:** [explorer.taler.tech](https://explorer.taler.tech/) — the primary, actively maintained explorer (live since March 2026)
+          - **Other explorers (older but still up):** [explorer.talercoin.org](https://explorer.talercoin.org/), [explorer.talercrypto.com](https://explorer.talercrypto.com/)
+          - **In-wallet Nodes page:** the 0.19 wallet has a built-in seeds / peers / connectivity checker
+      - q: "Where can I trade TLR?"
+        a: |
+          Currently active TLR trading pairs include:
+
+          - **Qutrade** — [TLR/USDT](https://qutrade.io/en/?market=tlr_usdt) (most recent listing)
+          - [BTC-Trade](https://btc-trade.com.ua/)
+          - [Richamster](https://richamster.com/trade/TLR_BTC/) — TLR/BTC
+          - [Bololex](https://bololex.com/trading/sessions/market-view?symbol=TLR-USDT) — TLR/USDT
+          - [OCCE](https://www.occe.io/exchange/tlr_btc) — TLR/BTC
+
+          Lower-volume venues such as Crex24 and STEX also list TLR. Always check the live volume before relying on a particular pair.
+      - q: "Where is the community?"
+        a: |
+          The active community Telegram is **[t.me/talercommunity](https://t.me/talercommunity)**. News and historical channels are also still active (see [Links](/en/links/)).
+      - q: "Is there a roadmap?"
+        a: |
+          Active development happens on the **0.19 branch**. Recent releases have focused on Apple Silicon and Linux ARM64 support, a modern wallet database, multi-architecture Docker images, the in-app Nodes page, the staking UI, and a sweeping macOS dependency rebuild that removed the Homebrew runtime requirement. Future direction is determined by the developers actually writing the code, not by a marketing roadmap. Follow [github.com/abkvme/taler/releases](https://github.com/abkvme/taler/releases).
+
+  - title: "Common concerns"
+    icon: "fa-shield-alt"
+    items:
+      - q: "Was there really a premine?"
+        a: |
+          Yes — **2,333,283 TLR** (~10% of max supply) was mined into the genesis block in 2017 by the original founders. They publicly promised it would be distributed to participating businesses for free; in practice no community member has ever come forward to confirm receiving any of it. Years of disputes, partial transfers, a "locked" wallet with a missing password, and 320,000 TLR mysteriously moving to an unknown address are all covered on the [history page](/en/docs/history/).
+      - q: "Is TALER a scam?"
+        a: |
+          The original 2017–2018 founders' management of the premine remains, charitably, controversial — and the project's first years were a sequence of public fights between three competing factions. *That* TALER is gone. The chain that exists today is a community-run open-source project with no central team, no premine left to allocate, and developers shipping code in public on GitHub. Treat it as exactly what it is: a small, long-running cryptocurrency you can audit yourself, not a managed business.
+      - q: "Is TALER legal in Belarus?"
+        a: |
+          Cryptocurrencies in Belarus are governed by **Presidential Decree No. 8** (signed December 2017, in force from 28 March 2018) and subsequent regulations. TALER itself has no special legal status. The Veyshnoria meme — historically intertwined with TALER — was ruled *"extremist"* by a Belarusian court in August 2022, but that ruling concerned Veyshnoria's social-media accounts and materials, not the TALER blockchain. Consult local counsel for your jurisdiction.
+      - q: "Why does TALER still exist?"
+        a: |
+          Because the chain still produces blocks, the wallet still ships, exchanges still list it, and the community is still here. After eight years, three feuding factions, a premine drama, an abandoned mobile wallet, and a price chart that has spent most of its life pointing one direction, TALER has settled into something quietly stable: a small, open-source, community-maintained blockchain — and one of the more colourful stories in the history of post-Soviet crypto.
