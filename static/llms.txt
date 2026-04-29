@@ -3,7 +3,7 @@
 > Hybrid Proof-of-Work / Proof-of-Stake cryptocurrency launched on the genesis block on 13 September 2017. The name pays homage to the historic European Thaler. Built on the Bitcoin Core foundation with a memory-hard Lyra2Z mining algorithm and Dark Gravity Wave difficulty adjustment. Maximum supply 23,333,333 TLR; ticker TLR; network port 23153.
 
 ## About
-- [About the project](https://taler.tech/en/about/): mission, history, contact information
+- [Contact](https://taler.tech/en/contact/): how to reach the project — email, Telegram, GitHub Discussions, issue tracker
 - [FAQ](https://taler.tech/en/faq/): 34 frequently asked questions covering wallets, mining, staking, governance, history
 
 ## Documentation

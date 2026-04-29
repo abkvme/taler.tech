@@ -13,8 +13,8 @@ other = "FAQ"
 [docs]
 other = "Дакументацыя"
 
-[about]
-other = "Пра праект"
+[contact]
+other = "Кантакты"
 
 [navigation]
 other = "Навігацыя"
@@ -503,65 +503,33 @@ other = "Пра праект"
 other = "Гісторыя"
 
 # About / Contact page
-[about_lead]
-other = "Адкрытая, гібрыдная PoW/PoS крыптавалюта, запушчаная ў верасні 2017 года. Распрацоўваецца і падтрымліваецца міжнароднай супольнасцю кантрыбутараў."
+[contact_lead]
+other = "Кантакты праекта і хуткія спасылкі на ўсе іншыя раздзелы сайта."
 
-[about_overview]
-other = "Што такое TALER"
-
-[about_oss_title]
-other = "Адкрыты код"
-[about_oss_desc]
-other = "Выпускаецца пад дазвольнай ліцэнзіяй. Зыходны код, пайплайн зборкі і рэлізы даступныя на GitHub."
-
-[about_community_title]
-other = "Кіруецца супольнасцю"
-[about_community_desc]
-other = "TALER не мае адзінага карпаратыўнага ўладальніка. Распрацоўка, майнінг, стэйкінг і кіраванне — адкрытыя для ўсіх."
-
-[about_history_title]
-other = "З 2017 года"
-[about_history_desc]
-other = "Genesis-блок 13 верасня 2017 года. Бесперапынная распрацоўка праз чатыры halving’і, наступны чакаецца ў канцы 2027 года."
-
-[about_at_a_glance]
-other = "Каротка"
-
-[about_genesis_label]
-other = "Genesis"
-[about_consensus_label]
-other = "Кансэнсус"
-[about_consensus_value]
-other = "Гібрыдны Proof-of-Work / Proof-of-Stake"
-[about_difficulty_label]
-other = "Складанасць"
-[about_license_label]
-other = "Ліцэнзія"
-
-[about_get_in_touch]
+[contact_get_in_touch]
 other = "Звяжыцеся з намі"
 
-[about_email_title]
-other = "Электронная пошта"
-[about_telegram_title]
-other = "Telegram"
-[about_github_title]
-other = "GitHub"
-[about_discussions_title]
-other = "Абмеркаванні"
-[about_discussions_desc]
-other = "Адкрытыя пытанні і прапановы ў GitHub Discussions."
-[about_issues_title]
-other = "Адсочванне памылак"
-[about_issues_desc]
-other = "Паведамляйце пра памылкі і запыты функцый."
-[about_security_title]
-other = "Бяспека"
-[about_security_desc]
-other = "Палітыка раскрыцця ўразлівасцей (security.txt)."
+[contact_useful_pages]
+other = "Карысныя старонкі"
 
-[about_see_all_links]
-other = "Усе спасылкі"
+[contact_email_title]
+other = "Электронная пошта"
+[contact_telegram_title]
+other = "Telegram"
+[contact_github_title]
+other = "GitHub"
+[contact_discussions_title]
+other = "Абмеркаванні"
+[contact_discussions_desc]
+other = "Адкрытыя пытанні і прапановы ў GitHub Discussions."
+[contact_issues_title]
+other = "Адсочванне памылак"
+[contact_issues_desc]
+other = "Паведамляйце пра памылкі і запыты функцый."
+[contact_security_title]
+other = "Бяспека"
+[contact_security_desc]
+other = "Палітыка раскрыцця ўразлівасцей."
 
 # 404 page
 [404_title]

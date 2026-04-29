@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1><i class="fas fa-shield-alt me-3"></i>{{ .Title }}</h1>
+                <p class="lead">{{ .Description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 mx-auto">
+                <div class="security-policy content">
+                    {{ .Content }}
+                </div>
+                <div class="text-center mt-5">
+                    <a href="mailto:{{ .Site.Params.contactEmail | default "info@taler.tech" }}" class="btn btn-taler btn-lg me-2">
+                        <i class="fas fa-envelope me-2"></i>{{ .Site.Params.contactEmail | default "info@taler.tech" }}
+                    </a>
+                    <a href="/.well-known/security.txt" class="btn btn-outline-taler btn-lg">
+                        <i class="fas fa-file-alt me-2"></i>security.txt
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

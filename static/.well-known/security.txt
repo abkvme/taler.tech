@@ -5,3 +5,6 @@ Contact: mailto:info@taler.tech
 Expires: 2027-04-29T00:00:00.000Z
 Preferred-Languages: en, ru, uk, be
 Canonical: https://taler.tech/.well-known/security.txt
+Policy: https://taler.tech/en/security/
+Acknowledgments: https://taler.tech/en/security/#acknowledgments
+Hiring: https://github.com/abkvme/taler/issues

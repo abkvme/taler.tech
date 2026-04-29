@@ -13,8 +13,8 @@ other = "FAQ"
 [docs]
 other = "Документация"
 
-[about]
-other = "О проекте"
+[contact]
+other = "Контакты"
 
 [navigation]
 other = "Навигация"
@@ -503,65 +503,33 @@ other = "О проекте"
 other = "История"
 
 # About / Contact page
-[about_lead]
-other = "Открытая, гибридная PoW/PoS криптовалюта, запущенная в сентябре 2017 года. Разрабатывается и поддерживается международным сообществом контрибьюторов."
+[contact_lead]
+other = "Контакты проекта и быстрые ссылки на остальные разделы сайта."
 
-[about_overview]
-other = "Что такое TALER"
-
-[about_oss_title]
-other = "Открытый код"
-[about_oss_desc]
-other = "Выпускается под разрешительной лицензией. Исходный код, пайплайн сборки и релизы публично доступны на GitHub."
-
-[about_community_title]
-other = "Управляется сообществом"
-[about_community_desc]
-other = "У TALER нет единого корпоративного владельца. Разработка, майнинг, стейкинг и управление — открыты для всех."
-
-[about_history_title]
-other = "С 2017 года"
-[about_history_desc]
-other = "Genesis-блок 13 сентября 2017 года. Непрерывная разработка через четыре халвинга, следующий ожидается в конце 2027 года."
-
-[about_at_a_glance]
-other = "Вкратце"
-
-[about_genesis_label]
-other = "Genesis"
-[about_consensus_label]
-other = "Консенсус"
-[about_consensus_value]
-other = "Гибридный Proof-of-Work / Proof-of-Stake"
-[about_difficulty_label]
-other = "Сложность"
-[about_license_label]
-other = "Лицензия"
-
-[about_get_in_touch]
+[contact_get_in_touch]
 other = "Связаться с нами"
 
-[about_email_title]
-other = "Электронная почта"
-[about_telegram_title]
-other = "Telegram"
-[about_github_title]
-other = "GitHub"
-[about_discussions_title]
-other = "Обсуждения"
-[about_discussions_desc]
-other = "Открытые вопросы и предложения в GitHub Discussions."
-[about_issues_title]
-other = "Трекер задач"
-[about_issues_desc]
-other = "Сообщайте об ошибках и запрашивайте функции."
-[about_security_title]
-other = "Безопасность"
-[about_security_desc]
-other = "Политика раскрытия уязвимостей (security.txt)."
+[contact_useful_pages]
+other = "Полезные страницы"
 
-[about_see_all_links]
-other = "Все ссылки"
+[contact_email_title]
+other = "Электронная почта"
+[contact_telegram_title]
+other = "Telegram"
+[contact_github_title]
+other = "GitHub"
+[contact_discussions_title]
+other = "Обсуждения"
+[contact_discussions_desc]
+other = "Открытые вопросы и предложения в GitHub Discussions."
+[contact_issues_title]
+other = "Трекер задач"
+[contact_issues_desc]
+other = "Сообщайте об ошибках и запрашивайте функции."
+[contact_security_title]
+other = "Безопасность"
+[contact_security_desc]
+other = "Политика раскрытия уязвимостей."
 
 # 404 page
 [404_title]

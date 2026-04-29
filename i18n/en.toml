@@ -13,8 +13,8 @@ other = "FAQ"
 [docs]
 other = "Documentation"
 
-[about]
-other = "About"
+[contact]
+other = "Contact"
 
 [navigation]
 other = "Navigation"
@@ -515,65 +515,33 @@ other = "About"
 other = "History"
 
 # About / Contact page
-[about_lead]
-other = "An open-source, hybrid PoW/PoS cryptocurrency launched in September 2017. Built and maintained by an international community of contributors."
+[contact_lead]
+other = "Project contacts and quick links to everything else on this site."
 
-[about_overview]
-other = "What TALER is"
-
-[about_oss_title]
-other = "Open Source"
-[about_oss_desc]
-other = "Released under a permissive license. Source code, build pipeline and release artefacts are public on GitHub."
-
-[about_community_title]
-other = "Community Driven"
-[about_community_desc]
-other = "TALER has no single corporate owner. Development, mining, staking and governance are open to anyone."
-
-[about_history_title]
-other = "Since 2017"
-[about_history_desc]
-other = "Genesis block on September 13, 2017. Continuous development through four halvings, with the next one expected in late 2027."
-
-[about_at_a_glance]
-other = "At a glance"
-
-[about_genesis_label]
-other = "Genesis"
-[about_consensus_label]
-other = "Consensus"
-[about_consensus_value]
-other = "Hybrid Proof-of-Work / Proof-of-Stake"
-[about_difficulty_label]
-other = "Difficulty"
-[about_license_label]
-other = "License"
-
-[about_get_in_touch]
+[contact_get_in_touch]
 other = "Get in touch"
 
-[about_email_title]
-other = "Email"
-[about_telegram_title]
-other = "Telegram"
-[about_github_title]
-other = "GitHub"
-[about_discussions_title]
-other = "Discussions"
-[about_discussions_desc]
-other = "Open questions and proposals on GitHub Discussions."
-[about_issues_title]
-other = "Issue Tracker"
-[about_issues_desc]
-other = "Report bugs and feature requests."
-[about_security_title]
-other = "Security"
-[about_security_desc]
-other = "Vulnerability disclosure policy (security.txt)."
+[contact_useful_pages]
+other = "Useful pages"
 
-[about_see_all_links]
-other = "All Links"
+[contact_email_title]
+other = "Email"
+[contact_telegram_title]
+other = "Telegram"
+[contact_github_title]
+other = "GitHub"
+[contact_discussions_title]
+other = "Discussions"
+[contact_discussions_desc]
+other = "Open questions and proposals on GitHub Discussions."
+[contact_issues_title]
+other = "Issue Tracker"
+[contact_issues_desc]
+other = "Report bugs and feature requests."
+[contact_security_title]
+other = "Security"
+[contact_security_desc]
+other = "Vulnerability disclosure policy."
 
 # 404 page
 [404_title]
