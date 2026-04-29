@@ -7,7 +7,7 @@ TALER прадастаўляе комплексны JSON-RPC інтэрфейс 
 
 <!--more-->
 
-## Пачатак працы з TALER RPC
+## Пачатак працы з TALER Blockchain RPC
 
 ### Уключэнне доступу RPC
 
@@ -259,7 +259,7 @@ curl --user yourusername:yourpassword \
 |--------|-------------|
 | `getnewaddress ("label") ("address_type")` | Генеруе новы адрас атрымання з апцыянальнай меткай |
 | `getrawchangeaddress ("address_type")` | Вяртае новы адрас для атрымання здачы |
-| `validateaddress "address"` | Правярае адрас TALER і вяртае інфармацыю аб ім |
+| `validateaddress "address"` | Правярае адрас TALER Coin і вяртае інфармацыю аб ім |
 | `getaddressinfo "address"` | Вяртае падрабязную інфармацыю аб адрасе ў кашальку |
 
 **Тыпы адрасоў**: `"legacy"`, `"p2sh-segwit"`, `"bech32"` (па змаўчанні залежыць ад канфігурацыі кашалька)
@@ -543,7 +543,7 @@ RPC выклікі вяртаюць памылкі ў наступным фар�
 
 ## Аўтэнтыфікацыя RPC
 
-TALER RPC выкарыстоўвае HTTP Basic Authentication. Наладзьце ўліковыя дадзеныя ў `taler.conf`:
+TALER Blockchain RPC выкарыстоўвае HTTP Basic Authentication. Наладзьце ўліковыя дадзеныя ў `taler.conf`:
 
 ```ini
 rpcuser=yourusername
@@ -561,10 +561,10 @@ rpcpassword=yourpassword
 
 ## Дадатковыя рэсурсы
 
-- **Кіраўніцтва па наладзе ноды**: [Запуск ноды TALER](/en/docs/node-setup/)
+- **Кіраўніцтва па наладзе ноды**: [Запуск ноды TALER Blockchain](/en/docs/node-setup/)
 - **Даведнік каманднага радка**: [talerd & taler-cli](/en/docs/node-cli/)
 - **Лепшыя практыкі бяспекі**: [Бяспека кашалька](/en/docs/security/)
 - **Кіраўніцтва па стэйкінгу**: [Майнінг і стэйкінг](/en/docs/node-mining/)
 - **Разгортванне Docker**: [Налада Docker](/en/docs/node-docker/)
 
-Для пытанняў або падтрымкі наведайце [Супольнасць TALER](https://t.me/talercommunity) у Telegram.
+Для пытанняў або падтрымкі наведайце [Супольнасць TALER Blockchain](https://t.me/talercommunity) у Telegram.

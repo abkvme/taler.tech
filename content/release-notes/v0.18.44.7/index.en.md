@@ -30,8 +30,8 @@ This release brings major infrastructure upgrades and platform support improveme
 - Native builds eliminate Rosetta 2 translation overhead on M1+ Macs
 
 #### Updated Application Icon
-- **New redesigned TALER icon** now used in the application
-- Modern icon design adopted by the TALER community
+- **New redesigned TALER Coin icon** now used in the application
+- Modern icon design adopted by the TALER Blockchain community
 - Consistent branding across all platforms
 - Updated application icons for Windows, macOS, and Linux
 
@@ -70,11 +70,11 @@ This release brings major infrastructure upgrades and platform support improveme
 
 ### Breaking Changes
 - **Berkeley DB upgraded from 4.8 to 18.1.40** - wallet.dat files are NOT backward compatible
-- Once upgraded to this version, wallet.dat files cannot be used with older TALER versions
+- Once upgraded to this version, wallet.dat files cannot be used with older TALER Blockchain versions
 - This is a one-way upgrade
 
 ### Upgrade Notes
-- **Warning**: After upgrading, you cannot downgrade to older TALER versions
+- **Warning**: After upgrading, you cannot downgrade to older TALER Blockchain versions
 - Wallet.dat files will be automatically upgraded to BDB 18.1.40 format on first use
 - The BDB upgrade is required for ARM64 platform support (BDB 4.8 lacks ARM64 mutex support)
 - Docker users should pull the latest multi-arch images

@@ -34,7 +34,7 @@ If you prefer to use Telegram for an initial private contact, message a maintain
 
 ## What to expect
 
-TALER is an open-source, volunteer-driven project. There is **no SLA, no guaranteed response time and no obligation** for anyone to act on a report — neither at this email, on Telegram, in GitHub Discussions, nor anywhere else.
+TALER Blockchain is an open-source, volunteer-driven project. There is **no SLA, no guaranteed response time and no obligation** for anyone to act on a report — neither at this email, on Telegram, in GitHub Discussions, nor anywhere else.
 
 What may happen if a community member picks up your report:
 

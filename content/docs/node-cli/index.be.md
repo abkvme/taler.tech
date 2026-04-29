@@ -3,7 +3,7 @@ title: "Камандны радок (talerd)"
 weight: 10
 ---
 
-Гэта кіраўніцтва змяшчае поўную дакументацыю па інструментах `talerd` (дэман TALER) і `taler-cli` (інтэрфейс каманднага радка).
+Гэта кіраўніцтва змяшчае поўную дакументацыю па інструментах `talerd` (дэман TALER Blockchain) і `taler-cli` (інтэрфейс каманднага радка).
 
 ## Агляд
 
@@ -16,7 +16,7 @@ TALER прадастаўляе два асноўныя інструменты к
 
 ## talerd - Дэман TALER
 
-Дэман `talerd` з'яўляецца асноўным праграмным забеспячэннем ноды блокчэйна TALER.
+Дэман `talerd` з'яўляецца асноўным праграмным забеспячэннем ноды блокчэйна TALER Blockchain.
 
 ### Базавае выкарыстанне
 
@@ -172,7 +172,7 @@ talerd -daemon
 
 ```ini
 [Unit]
-Description=TALER Daemon
+Description=TALER Blockchain Daemon
 After=network.target
 
 [Service]
@@ -665,6 +665,6 @@ sudo ufw deny 23152/tcp
 
 ## Наступныя крокі
 
-- **Разгортванне Docker**: Запуск ноды TALER у кантэйнерах з [Docker](/en/docs/node-docker/)
+- **Разгортванне Docker**: Запуск ноды TALER Blockchain у кантэйнерах з [Docker](/en/docs/node-docker/)
 - **Майнінг і стэйкінг**: Даведайцеся аб генерацыі блокаў у [Майнінг і стэйкінг](/en/docs/node-mining/)
 - **Даведнік RPC**: Поўная дакументацыя RPC API ў [Дакументацыя для распрацоўшчыкаў](/en/docs/rpc-reference/)

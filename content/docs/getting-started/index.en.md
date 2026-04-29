@@ -3,7 +3,7 @@ title: "Getting Started"
 weight: 1
 ---
 
-Welcome to TALER! This guide will help you get started with the TALER blockchain by downloading and installing the wallet application.
+Welcome to TALER Blockchain! This guide will help you get started with the TALER Blockchain by downloading and installing the wallet application.
 
 ## Prerequisites
 
@@ -16,11 +16,11 @@ Before you begin, ensure your system meets the following requirements:
 
 ---
 
-## Download TALER Wallet
+## Download TALER Coin Wallet
 
 ### Step 1: Visit the Release Page
 
-Download the latest TALER wallet from the community-driven GitHub repository:
+Download the latest TALER Coin wallet from the community-driven GitHub repository:
 
 **Latest Release**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 
@@ -45,11 +45,11 @@ After downloading, verify the file integrity by checking the file size and SHA25
 
 ## Next Steps
 
-Once you've downloaded the TALER wallet for your platform:
+Once you've downloaded the TALER Coin wallet for your platform:
 
 1. **Installation**: Follow the platform-specific installation instructions in the [Wallet Setup](/en/docs/wallet-setup/) guide
 2. **First Launch**: Learn how to start the wallet and sync with the blockchain
 3. **Create Wallet**: The wallet will be created automatically on first launch
-4. **Start Using**: Begin sending and receiving TALER coins
+4. **Start Using**: Begin sending and receiving TALER Coin
 
 For detailed installation and setup instructions, proceed to the [Wallet Setup](/en/docs/wallet-setup/) documentation.

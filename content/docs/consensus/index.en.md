@@ -3,7 +3,7 @@ title: "Consensus Mechanism"
 weight: 11
 ---
 
-Understanding TALER's consensus mechanism and how transactions are validated on the network.
+Understanding TALER Blockchain's consensus mechanism and how transactions are validated on the network.
 
 ## Content Placeholder
 

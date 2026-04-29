@@ -88,7 +88,7 @@ docker compose down
 
 ### Поведение по умолчанию
 
-По умолчанию контейнер Docker TALER:
+По умолчанию контейнер Docker TALER Blockchain:
 - Работает без включенного RPC сервера (безопасность)
 - Отключает функциональность кошелька
 - Хранит данные блокчейна в томе `/data`
@@ -523,7 +523,7 @@ docker compose up -d
 
 ```ini
 [Unit]
-Description=TALER Docker Node
+Description=TALER Blockchain Docker Node
 Requires=docker.service
 After=docker.service
 

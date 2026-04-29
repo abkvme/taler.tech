@@ -3,7 +3,7 @@ title: "Docker Deployment"
 weight: 11
 ---
 
-This guide covers deploying TALER nodes using Docker and Docker Compose.
+This guide covers deploying TALER Blockchain nodes using Docker and Docker Compose.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ docker compose version
 
 ### Using Docker Compose
 
-The TALER repository includes a production-ready `docker-compose.yml` file.
+The TALER Blockchain repository includes a production-ready `docker-compose.yml` file.
 
 **docker-compose.yml**:
 
@@ -88,7 +88,7 @@ docker compose down
 
 ### Default Behavior
 
-By default, the TALER Docker container:
+By default, the TALER Blockchain Docker container:
 - Runs without RPC server enabled (security)
 - Disables wallet functionality
 - Stores blockchain data in `/data` volume
@@ -303,7 +303,7 @@ This stores blockchain data in `./data` on your host system.
 
 ## Building Custom Image
 
-The TALER repository includes a `Dockerfile` for building custom images.
+The TALER Blockchain repository includes a `Dockerfile` for building custom images.
 
 ### Build Locally
 
@@ -523,7 +523,7 @@ Create `/etc/systemd/system/taler-docker.service`:
 
 ```ini
 [Unit]
-Description=TALER Docker Node
+Description=TALER Blockchain Docker Node
 Requires=docker.service
 After=docker.service
 

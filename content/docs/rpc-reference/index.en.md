@@ -3,11 +3,11 @@ title: "RPC Reference"
 weight: 1
 ---
 
-TALER provides a comprehensive JSON-RPC interface for programmatic interaction with the blockchain, wallet, and network. This reference documents all available RPC methods.
+TALER Blockchain provides a comprehensive JSON-RPC interface for programmatic interaction with the blockchain, wallet, and network. This reference documents all available RPC methods.
 
 <!--more-->
 
-## Getting Started with TALER RPC
+## Getting Started with TALER Blockchain RPC
 
 ### Enabling RPC Access
 
@@ -259,7 +259,7 @@ Generate and manage wallet addresses.
 |--------|-------------|
 | `getnewaddress ("label") ("address_type")` | Generates a new receiving address with optional label |
 | `getrawchangeaddress ("address_type")` | Returns a new address for receiving change |
-| `validateaddress "address"` | Validates a TALER address and returns information about it |
+| `validateaddress "address"` | Validates a TALER Coin address and returns information about it |
 | `getaddressinfo "address"` | Returns detailed information about an address in the wallet |
 
 **Address Types**: `"legacy"`, `"p2sh-segwit"`, `"bech32"` (default depends on wallet configuration)
@@ -309,7 +309,7 @@ Query wallet balances and transaction information.
 
 ## Sending Transactions
 
-Send TALER coins from the wallet.
+Send TALER Coin from the wallet.
 
 ### Simple Sending
 
@@ -463,12 +463,12 @@ taler-cli setban "192.168.1.100" "add" 86400
 
 ## Server Control & Information
 
-Control the TALER daemon and query system information.
+Control the TALER Blockchain daemon and query system information.
 
 | Method | Description |
 |--------|-------------|
 | `help ("command")` | Lists all commands or returns help for a specific command |
-| `stop` | Stops the TALER server gracefully |
+| `stop` | Stops the TALER Blockchain server gracefully |
 | `uptime` | Returns the total server uptime in seconds |
 | `getmemoryinfo ("mode")` | Returns memory usage statistics |
 | `logging ("[include,...] <exclude>")` | Gets or sets logging categories for debugging |
@@ -543,7 +543,7 @@ RPC calls return errors in the following format:
 
 ## RPC Authentication
 
-TALER RPC uses HTTP Basic Authentication. Configure credentials in `taler.conf`:
+TALER Blockchain RPC uses HTTP Basic Authentication. Configure credentials in `taler.conf`:
 
 ```ini
 rpcuser=yourusername
@@ -561,7 +561,7 @@ rpcpassword=yourpassword
 
 ## Additional Resources
 
-- **Node Setup Guide**: [Running a TALER Node](/en/docs/node-setup/)
+- **Node Setup Guide**: [Running a TALER Blockchain Node](/en/docs/node-setup/)
 - **Command Line Reference**: [talerd & taler-cli](/en/docs/node-cli/)
 - **Security Best Practices**: [Wallet Security](/en/docs/security/)
 - **Staking Guide**: [Mining & Staking](/en/docs/node-mining/)

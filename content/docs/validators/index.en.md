@@ -3,7 +3,7 @@ title: "Validators"
 weight: 12
 ---
 
-Learn about TALER validators, how to become one, and their role in securing the network.
+Learn about TALER Blockchain validators, how to become one, and their role in securing the network.
 
 ## Content Placeholder
 

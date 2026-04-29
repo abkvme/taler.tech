@@ -88,7 +88,7 @@ docker compose down
 
 ### Паводзіны па змаўчанні
 
-Па змаўчанні кантэйнер Docker TALER:
+Па змаўчанні кантэйнер Docker TALER Blockchain:
 - Працуе без уключанага RPC сервера (бяспека)
 - Адключае функцыянальнасць кашалька
 - Захоўвае дадзеныя блокчэйна ў тому `/data`
@@ -523,7 +523,7 @@ docker compose up -d
 
 ```ini
 [Unit]
-Description=TALER Docker Node
+Description=TALER Blockchain Docker Node
 Requires=docker.service
 After=docker.service
 

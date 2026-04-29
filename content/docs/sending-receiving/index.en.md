@@ -3,11 +3,11 @@ title: "Sending & Receiving"
 weight: 3
 ---
 
-This guide covers how to send and receive TALER coins using the GUI wallet application.
+This guide covers how to send and receive TALER Coin using the GUI wallet application.
 
 ## Prerequisites
 
-Before sending or receiving TALER:
+Before sending or receiving TALER Coin:
 
 - **Wallet Installed**: Complete the [Wallet Setup](/en/docs/wallet-setup/) guide
 - **Blockchain Synced**: Wait for initial synchronization to complete
@@ -19,7 +19,7 @@ Before sending or receiving TALER:
 
 ### Generating a Receive Address
 
-To receive TALER coins, you need to provide a payment address to the sender.
+To receive TALER Coin, you need to provide a payment address to the sender.
 
 1. **Open the Receive Tab**:
    - Launch `taler-qt`
@@ -29,16 +29,16 @@ To receive TALER coins, you need to provide a payment address to the sender.
    - Enter a label for this address (optional but recommended)
      - Example: "Payment from Alice", "Mining rewards", "Exchange deposit"
    - Click **Request payment** button
-   - A new TALER address will be generated
+   - A new TALER Coin address will be generated
 
 3. **Copy the Address**:
    - The address appears in the format: `T...` (34 characters)
    - Click **Copy Address** to copy to clipboard
    - Or use the QR code for mobile scanning
 
-### Understanding TALER Addresses
+### Understanding TALER Coin Addresses
 
-TALER addresses:
+TALER Coin addresses:
 - Start with capital `T`
 - Are exactly 34 characters long
 - Are case-sensitive
@@ -51,12 +51,12 @@ TFNxSh9X75WguDWRj4FbRELK8GUP37xu4E
 
 ### Sharing Your Address
 
-To receive payment, share your TALER address with the sender via:
+To receive payment, share your TALER Coin address with the sender via:
 - Copy and paste in messaging apps
 - QR code scanning (for mobile wallets)
 - Email or other communication channels
 
-**Security Note**: TALER addresses are public information. Sharing them does not compromise your wallet security.
+**Security Note**: TALER Coin addresses are public information. Sharing them does not compromise your wallet security.
 
 ---
 
@@ -75,7 +75,7 @@ To receive payment, share your TALER address with the sender via:
 
 ### Transaction Confirmations
 
-When you receive TALER:
+When you receive TALER Blockchain:
 - **0 confirmations**: Transaction is pending (shown in gray)
 - **1+ confirmations**: Transaction is being confirmed (shown in yellow)
 - **6+ confirmations**: Transaction is fully confirmed (shown in green)
@@ -108,7 +108,7 @@ Click on any transaction to view details:
    - Click the **Send** tab in the top navigation
 
 2. **Enter Payment Details**:
-   - **Pay To**: Enter recipient's TALER address
+   - **Pay To**: Enter recipient's TALER Coin address
      - Address starts with `T`
      - Must be exact (case-sensitive)
    - **Label**: Optional description for your records
@@ -257,7 +257,7 @@ Save frequently used addresses for quick access:
 
 ## Multiple Recipients
 
-Send TALER to multiple recipients in a single transaction:
+Send TALER Coin to multiple recipients in a single transaction:
 
 1. In **Send** tab, enter first recipient details
 2. Click **Add Recipient** button (+ icon)
@@ -326,7 +326,7 @@ Before sending large amounts:
 
 ### Invalid Address
 
-**Error**: "Invalid TALER address"
+**Error**: "Invalid TALER Coin address"
 
 **Causes**:
 - Typo in address
@@ -400,6 +400,6 @@ The wallet automatically estimates appropriate fees based on:
 
 ## Next Steps
 
-- **Mining & Staking**: Earn TALER rewards in [Mining & Staking](/en/docs/node-mining/)
+- **Mining & Staking**: Earn TALER Coin rewards in [Mining & Staking](/en/docs/node-mining/)
 - **Security**: Learn security best practices in [Security Guide](/en/docs/security/)
 - **Troubleshooting**: Get help in [Community Channels](/en/links/)

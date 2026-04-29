@@ -3,7 +3,7 @@ title: "Governance"
 weight: 13
 ---
 
-Understanding TALER's governance model and how decisions are made in the ecosystem.
+Understanding TALER Blockchain's governance model and how decisions are made in the ecosystem.
 
 ## Content Placeholder
 

@@ -3,11 +3,11 @@ title: "Mining & Staking"
 weight: 5
 ---
 
-This guide covers how to earn TALER rewards through Proof-of-Stake (PoS) staking using the GUI wallet.
+This guide covers how to earn TALER Coin rewards through Proof-of-Stake (PoS) staking using the GUI wallet.
 
-## Understanding TALER's Consensus
+## Understanding TALER Blockchain's Consensus
 
-TALER uses a hybrid Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus mechanism:
+TALER Blockchain uses a hybrid Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus mechanism:
 
 - **Proof-of-Work (PoW)**: Miners generate blocks using computational power
 - **Proof-of-Stake (PoS)**: Coin holders stake their coins to generate blocks
@@ -24,7 +24,7 @@ TALER uses a hybrid Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus mecha
 
 ### How Staking Works
 
-Proof-of-Stake allows you to earn rewards by holding TALER coins in your wallet. Instead of using computational power like PoW mining, PoS uses:
+Proof-of-Stake allows you to earn rewards by holding TALER Coin in your wallet. Instead of using computational power like PoW mining, PoS uses:
 
 - **Coin Age**: How long you've held coins
 - **Coin Amount**: How many coins you hold
@@ -36,7 +36,7 @@ When your coins successfully stake, you create a new block and receive:
 
 ### Staking Requirements
 
-To stake TALER coins, you need:
+To stake TALER Coin, you need:
 
 1. **Minimum Amount**: At least 10 TLR per coin input
 2. **Minimum Age**: Coins must mature for 48 hours after receiving them
@@ -75,7 +75,7 @@ The wallet will restart after encryption.
 
 ### Step 2: Fund Your Wallet
 
-To stake, you need TALER coins in your wallet:
+To stake, you need TALER Coin in your wallet:
 
 1. **Generate receiving address** in the Receive tab
 2. **Transfer TALER** to your wallet from an exchange or another wallet
@@ -210,7 +210,7 @@ PoS staking rewards are based on:
 1. **Coin Age**: How long you've held the coins (in coin-days)
 2. **Coin Amount**: How many coins you're staking
 3. **Block Subsidy**: Current PoS block reward (30% of PoW subsidy)
-4. **Network Supply**: Total TALER supply
+4. **Network Supply**: Total TALER Coin supply
 
 **Formula**:
 ```
@@ -547,4 +547,4 @@ More uptime = more staking opportunities.
 - **Monitor Transactions**: Track rewards in [Sending & Receiving](/en/docs/sending-receiving/)
 - **Community Support**: Get help in [Community Channels](/en/links/)
 
-**Start staking today and help secure the TALER network while earning rewards!**
+**Start staking today and help secure the TALER Blockchain network while earning rewards!**

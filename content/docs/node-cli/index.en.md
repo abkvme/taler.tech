@@ -3,20 +3,20 @@ title: "Command Line (talerd)"
 weight: 10
 ---
 
-This guide provides comprehensive documentation for `talerd` (the TALER daemon) and `taler-cli` (command-line interface) tools.
+This guide provides comprehensive documentation for `talerd` (the TALER Blockchain daemon) and `taler-cli` (command-line interface) tools.
 
 ## Overview
 
-TALER provides two primary command-line tools:
+TALER Blockchain provides two primary command-line tools:
 
 - **`talerd`**: The blockchain daemon that runs the full node
 - **`taler-cli`**: Command-line tool to interact with the running daemon
 
 ---
 
-## talerd - TALER Daemon
+## talerd - TALER Blockchain Daemon
 
-The `talerd` daemon is the core TALER blockchain node software.
+The `talerd` daemon is the core TALER Blockchain node software.
 
 ### Basic Usage
 
@@ -172,7 +172,7 @@ Create `/etc/systemd/system/talerd.service`:
 
 ```ini
 [Unit]
-Description=TALER Daemon
+Description=TALER Blockchain Daemon
 After=network.target
 
 [Service]
@@ -665,6 +665,6 @@ sudo ufw deny 23152/tcp
 
 ## Next Steps
 
-- **Docker Deployment**: Run TALER node in containers with [Docker](/en/docs/node-docker/)
+- **Docker Deployment**: Run TALER Blockchain node in containers with [Docker](/en/docs/node-docker/)
 - **Mining & Staking**: Learn about block generation in [Mining & Staking](/en/docs/node-mining/)
 - **RPC Reference**: Full RPC API documentation in [Developer Documentation](/en/docs/rpc-reference/)

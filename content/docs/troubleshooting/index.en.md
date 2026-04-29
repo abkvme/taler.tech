@@ -3,7 +3,7 @@ title: "Troubleshooting"
 weight: 5
 ---
 
-Common issues and their solutions for TALER users.
+Common issues and their solutions for TALER Coin users.
 
 ## Content Placeholder
 

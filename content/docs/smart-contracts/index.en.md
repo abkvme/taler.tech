@@ -3,7 +3,7 @@ title: "Smart Contracts"
 weight: 8
 ---
 
-Learn how to develop and deploy smart contracts on TALER blockchain.
+Learn how to develop and deploy smart contracts on TALER Blockchain.
 
 ## Content Placeholder
 

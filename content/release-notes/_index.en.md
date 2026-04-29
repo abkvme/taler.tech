@@ -1,6 +1,6 @@
 ---
 title: "Release Notes"
-description: "TALER blockchain release history and changelog"
+description: "TALER Blockchain release history and changelog"
 ---
 
-Stay up to date with the latest TALER releases, new features, improvements, and bug fixes.
+Stay up to date with the latest TALER Blockchain releases, new features, improvements, and bug fixes.

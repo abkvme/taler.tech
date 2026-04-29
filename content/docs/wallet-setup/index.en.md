@@ -3,7 +3,7 @@ title: "Wallet Setup"
 weight: 2
 ---
 
-This guide will walk you through installing and setting up the TALER wallet on your system.
+This guide will walk you through installing and setting up the TALER Coin wallet on your system.
 
 ## Installation
 
@@ -59,11 +59,11 @@ This guide will walk you through installing and setting up the TALER wallet on y
 
 ---
 
-## Launching the TALER Wallet
+## Launching the TALER Coin Wallet
 
 ### Starting via Command Line
 
-The TALER GUI wallet can be started from the command line with various options.
+The TALER Coin GUI wallet can be started from the command line with various options.
 
 #### Basic Launch
 
@@ -127,9 +127,9 @@ taler-qt -testnet
 
 ### Initial Blockchain Synchronization
 
-When you first launch TALER wallet, it will begin synchronizing with the blockchain:
+When you first launch TALER Coin wallet, it will begin synchronizing with the blockchain:
 
-1. **Splash Screen**: The application will display the TALER logo while loading
+1. **Splash Screen**: The application will display the TALER Blockchain logo while loading
 2. **Synchronization Notice**: A modal overlay will appear showing sync progress
 3. **Progress Bar**: Shows percentage of blockchain downloaded
 4. **Time Estimate**: Displays estimated time remaining
@@ -143,18 +143,18 @@ When you first launch TALER wallet, it will begin synchronizing with the blockch
 - **Headers First**: Downloads block headers before full blocks for faster initial sync
 - **Background Sync**: You can minimize the wallet while syncing continues
 
-**Tip**: For faster synchronization, ensure your system allows TALER through the firewall and has sufficient peer connections (check status bar).
+**Tip**: For faster synchronization, ensure your system allows TALER Blockchain through the firewall and has sufficient peer connections (check status bar).
 
 ---
 
 ## Wallet Interface Overview
 
-Once synchronized, the TALER wallet interface consists of several main sections:
+Once synchronized, the TALER Coin wallet interface consists of several main sections:
 
 ### Top Navigation Tabs
 
 1. **Overview**: Dashboard showing balances and recent transactions
-2. **Send**: Interface for sending TALER coins
+2. **Send**: Interface for sending TALER Coin
 3. **Receive**: Generate addresses to receive coins
 4. **Transactions**: Complete transaction history
 5. **Mining**: Enable/configure PoW mining

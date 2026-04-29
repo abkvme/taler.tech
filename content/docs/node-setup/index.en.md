@@ -3,11 +3,11 @@ title: "Running a Node"
 weight: 9
 ---
 
-This guide covers how to set up and run a full TALER blockchain node.
+This guide covers how to set up and run a full TALER Blockchain node.
 
-## What is a TALER Node?
+## What is a TALER Blockchain Node?
 
-A TALER node is a full participant in the blockchain network that:
+A TALER Blockchain node is a full participant in the blockchain network that:
 
 - **Validates Transactions**: Verifies all transactions according to consensus rules
 - **Maintains Blockchain**: Stores the complete transaction history
@@ -15,13 +15,13 @@ A TALER node is a full participant in the blockchain network that:
 - **Supports Network**: Contributes to network decentralization and security
 - **Enables Mining/Staking**: Allows you to participate in block generation
 
-Running a node helps secure the TALER network and gives you full control over your blockchain interactions.
+Running a node helps secure the TALER Blockchain network and gives you full control over your blockchain interactions.
 
 ---
 
-## Ways to Run a TALER Node
+## Ways to Run a TALER Blockchain Node
 
-You can run a TALER node using several methods depending on your needs:
+You can run a TALER Blockchain node using several methods depending on your needs:
 
 ### 1. GUI Wallet (taler-qt) - For Desktop Users
 
@@ -72,7 +72,7 @@ Run `talerd` as a system service:
 
 **Best for**: Easy upgrades, reproducible deployments, VPS hosting
 
-Run TALER node in Docker container:
+Run TALER Blockchain node in Docker container:
 - Easy updates: `docker compose pull && docker compose up -d`
 - Isolated environment
 - Reproducible configuration
@@ -101,7 +101,7 @@ Run TALER node in Docker container:
 
 ## Prerequisites
 
-Before running a TALER node, ensure your system meets these requirements:
+Before running a TALER Blockchain node, ensure your system meets these requirements:
 
 ### Hardware Requirements
 
@@ -119,11 +119,11 @@ Before running a TALER node, ensure your system meets these requirements:
 
 ---
 
-## Download TALER Node Software
+## Download TALER Blockchain Node Software
 
 ### Step 1: Visit the Release Page
 
-Download the latest TALER node software from the community-driven GitHub repository:
+Download the latest TALER Blockchain node software from the community-driven GitHub repository:
 
 **Latest Release**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
 
@@ -210,13 +210,13 @@ talerd
 
 On first launch, `talerd` will:
 1. Create the data directory (if it doesn't exist)
-2. Connect to the TALER network
+2. Connect to the TALER Blockchain network
 3. Begin downloading the blockchain
 4. Start validating and relaying transactions
 
 ### Data Directory Locations
 
-By default, TALER stores blockchain data in:
+By default, TALER Blockchain stores blockchain data in:
 
 - **Windows**: `%APPDATA%\TALER\`
 - **macOS**: `~/Taler/`
@@ -395,7 +395,7 @@ prune=2000
 
 ## Community Seed Servers
 
-TALER nodes discover peers through a combination of hardcoded seeds and a community-maintained seed list hosted on GitHub. If you run a node with reliable uptime, you can contribute it to the seed list to help strengthen the network.
+TALER Blockchain nodes discover peers through a combination of hardcoded seeds and a community-maintained seed list hosted on GitHub. If you run a node with reliable uptime, you can contribute it to the seed list to help strengthen the network.
 
 **Learn more**: [Community Seed Servers](/en/docs/seed-servers/) - How peer discovery works and how to add your node
 
@@ -407,5 +407,5 @@ TALER nodes discover peers through a combination of hardcoded seeds and a commun
 
 - **Seed Servers**: Learn about peer discovery and contribute your node in [Community Seed Servers](/en/docs/seed-servers/)
 - **Command Line**: Learn advanced `talerd` options in the [Node CLI](/en/docs/node-cli/) guide
-- **Docker Deployment**: Run TALER node in containers with [Docker](/en/docs/node-docker/)
+- **Docker Deployment**: Run TALER Blockchain node in containers with [Docker](/en/docs/node-docker/)
 - **Mining & Staking**: Participate in block generation in [Mining & Staking](/en/docs/node-mining/)

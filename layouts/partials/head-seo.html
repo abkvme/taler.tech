@@ -104,9 +104,12 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "TALER Blockchain",
+  "alternateName": ["TALER", "TLR", "TALER Coin"],
   "url": "{{ .Site.BaseURL }}",
   "logo": "{{ "/images/talerlogo2.png" | absURL }}",
   "description": {{ $desc | jsonify | safeJS }},
+  "disambiguatingDescription": "TALER Blockchain (ticker TLR) is an independent, community-driven hybrid PoW/PoS cryptocurrency launched in September 2017. It is unrelated to GNU Taler, a separate digital payment system by the GNU Project (https://taler.net/).",
+  "foundingDate": "2017-09-13",
   {{- with .Site.Params.contactEmail }}
   "email": {{ . | jsonify | safeJS }},
   "contactPoint": {

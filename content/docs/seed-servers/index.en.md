@@ -3,13 +3,13 @@ title: "Community Seed Servers"
 weight: 10
 ---
 
-Seed servers help TALER nodes discover peers when joining the network. TALER uses a combination of hardcoded seeds and a community-maintained seed list to ensure reliable connectivity and decentralization.
+Seed servers help TALER Blockchain nodes discover peers when joining the network. TALER Blockchain uses a combination of hardcoded seeds and a community-maintained seed list to ensure reliable connectivity and decentralization.
 
 ## How Peer Discovery Works
 
-When a TALER node starts, it needs to find other nodes to connect to. This happens in several stages:
+When a TALER Blockchain node starts, it needs to find other nodes to connect to. This happens in several stages:
 
-1. **Hardcoded DNS Seeds** - Built into the node binary, these are DNS names that resolve to known TALER nodes
+1. **Hardcoded DNS Seeds** - Built into the node binary, these are DNS names that resolve to known TALER Blockchain nodes
 2. **Hardcoded Fixed IP Seeds** - A fallback list of IP addresses compiled into the binary
 3. **Community Seed List** - A remote `bootstrap.json` file fetched from GitHub on startup, maintained by the community
 4. **Peer Exchange** - Once connected, nodes share peer addresses with each other
@@ -43,7 +43,7 @@ Each entry has:
 
 ## Viewing Seed Servers in the GUI
 
-The TALER Qt wallet includes an **Info** tab that displays all seed servers and their connectivity status:
+The TALER Coin Qt wallet includes an **Info** tab that displays all seed servers and their connectivity status:
 
 - **Hardcoded Seeds** - DNS and fixed IP seeds built into the binary
 - **Community Seeds** - Nodes from the GitHub `bootstrap.json` list
@@ -55,7 +55,7 @@ Click **Refresh** to run connectivity checks against all seed servers. Green dot
 
 ## Adding Your Node to the Seed List
 
-If you run a TALER node with reliable uptime on a static IP or DNS name, you can contribute it to the community seed list. This helps other nodes discover peers and strengthens the network.
+If you run a TALER Blockchain node with reliable uptime on a static IP or DNS name, you can contribute it to the community seed list. This helps other nodes discover peers and strengthens the network.
 
 ### Requirements
 
@@ -84,13 +84,13 @@ If you run a TALER node with reliable uptime on a static IP or DNS name, you can
    ```
 6. **Create a Pull Request** at [github.com/abkvme/taler-seeds](https://github.com/abkvme/taler-seeds) with a brief description of your node (location, uptime, etc.)
 
-Submissions are validated automatically by CI. Once merged, all new TALER nodes starting up will discover your node.
+Submissions are validated automatically by CI. Once merged, all new TALER Blockchain nodes starting up will discover your node.
 
 ---
 
 ## Official Seed Infrastructure
 
-The TALER project maintains seed servers on the `taler.tech` domain:
+The TALER Blockchain project maintains seed servers on the `taler.tech` domain:
 
 | Seed Server | Port | Type |
 |-------------|------|------|
@@ -114,6 +114,6 @@ Configure your firewall to allow incoming connections on the appropriate port.
 
 ## Related
 
-- [Running a Node](/en/docs/node-setup/) - Full guide to setting up a TALER node
+- [Running a Node](/en/docs/node-setup/) - Full guide to setting up a TALER Blockchain node
 - [Node CLI](/en/docs/node-cli/) - Command-line daemon configuration
 - [Docker Deployment](/en/docs/node-docker/) - Running a node in Docker

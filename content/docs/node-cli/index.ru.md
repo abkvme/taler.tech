@@ -3,7 +3,7 @@ title: "Командная строка (talerd)"
 weight: 10
 ---
 
-Это руководство содержит полную документацию по инструментам `talerd` (демон TALER) и `taler-cli` (интерфейс командной строки).
+Это руководство содержит полную документацию по инструментам `talerd` (демон TALER Blockchain) и `taler-cli` (интерфейс командной строки).
 
 ## Обзор
 
@@ -16,7 +16,7 @@ TALER предоставляет два основных инструмента 
 
 ## talerd - Демон TALER
 
-Демон `talerd` является основным программным обеспечением ноды блокчейна TALER.
+Демон `talerd` является основным программным обеспечением ноды блокчейна TALER Blockchain.
 
 ### Базовое использование
 
@@ -172,7 +172,7 @@ talerd -daemon
 
 ```ini
 [Unit]
-Description=TALER Daemon
+Description=TALER Blockchain Daemon
 After=network.target
 
 [Service]
@@ -665,6 +665,6 @@ sudo ufw deny 23152/tcp
 
 ## Следующие шаги
 
-- **Развертывание Docker**: Запуск ноды TALER в контейнерах с [Docker](/en/docs/node-docker/)
+- **Развертывание Docker**: Запуск ноды TALER Blockchain в контейнерах с [Docker](/en/docs/node-docker/)
 - **Майнинг и стейкинг**: Узнайте о генерации блоков в [Майнинг и стейкинг](/en/docs/node-mining/)
 - **Справочник RPC**: Полная документация RPC API в [Документация для разработчиков](/en/docs/rpc-reference/)

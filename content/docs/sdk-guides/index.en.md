@@ -3,7 +3,7 @@ title: "SDK Guides"
 weight: 10
 ---
 
-Comprehensive guides for using the TALER SDK in your applications.
+Comprehensive guides for using the TALER Blockchain SDK in your applications.
 
 ## Content Placeholder
 

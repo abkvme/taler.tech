@@ -88,7 +88,7 @@ docker compose down
 
 ### Поведінка за замовчуванням
 
-За замовчуванням контейнер Docker TALER:
+За замовчуванням контейнер Docker TALER Blockchain:
 - Працює без увімкненого RPC сервера (безпека)
 - Вимикає функціональність гаманця
 - Зберігає дані блокчейну в томі `/data`
@@ -523,7 +523,7 @@ docker compose up -d
 
 ```ini
 [Unit]
-Description=TALER Docker Node
+Description=TALER Blockchain Docker Node
 Requires=docker.service
 After=docker.service
 

@@ -69,7 +69,7 @@ Quick context, since the term is going to keep coming up.
 
 Veyshnoria was a fictional country invented in **July 2017** for the joint Russian–Belarusian military exercise **Zapad-2017**. The Belarusian internet seized on it instantly and turned it into a civic meme - a stand-in for an idealized Belarus (Belarusian-speaking, oriented toward Europe rather than Moscow), complete with a flag, an anthem, an "e-consulate" handing out online passports, and a claimed national currency: **TALER**. That last detail is why the name keeps showing up here.
 
-By 2018 the meme had grown into a real online community - almost 20,000 people had signed up for "Veyshnorian citizenship." When Lavnikevich said he was *"transferring everything to Veyshnoria,"* this is where it was going. The TALER team that grew out of that community is the *"Veyshnoria"* side referenced throughout this page.
+By 2018 the meme had grown into a real online community - almost 20,000 people had signed up for "Veyshnorian citizenship." When Lavnikevich said he was *"transferring everything to Veyshnoria,"* this is where it was going. The TALER Blockchain team that grew out of that community is the *"Veyshnoria"* side referenced throughout this page.
 
 In **August 2022**, a Belarusian court ruled Veyshnoria's social-media accounts and materials *"extremist"* - sadly in keeping with the post-2020 times.
 
@@ -77,7 +77,7 @@ Further reading: [Wikipedia](https://en.wikipedia.org/wiki/Veyshnoria) · [Meduz
 
 ## March 2018: The Sanatorium Meeting
 
-By late March 2018, the author of this account was already part of the TALER team. A meeting was arranged in the sanatorium where the Creator was treating his leg. On one side: **the Creator**, **Kornyshev** (his associate from Vitebsk), and **Rubilnik** (owner of one of the mining pools). On the other side: three people from **Veyshnoria**, including the author.
+By late March 2018, the author of this account was already part of the TALER Blockchain team. A meeting was arranged in the sanatorium where the Creator was treating his leg. On one side: **the Creator**, **Kornyshev** (his associate from Vitebsk), and **Rubilnik** (owner of one of the mining pools). On the other side: three people from **Veyshnoria**, including the author.
 
 A literal quote from the Creator during that meeting, still remembered word-for-word: *"Can we mint some more premine?"*
 
@@ -149,7 +149,7 @@ By mid-2018, the project had publicly settled into a three-camp structure. A con
 
 ### The "Veyshnoria" Team
 
-After the premine transfer, the team got TALER listed on five exchanges, rebuilt the website / forum / social media, and turned the Veyshnoria virtual project itself into a working example of TALER integration in a real web product.
+After the premine transfer, the team got TALER listed on five exchanges, rebuilt the website / forum / social media, and turned the Veyshnoria virtual project itself into a working example of TALER Blockchain integration in a real web product.
 
 Active members:
 
@@ -178,11 +178,11 @@ Stated plans (as of mid-2018):
 1. A hardfork to increase transaction throughput by more than 5× and improve security.
 2. A campaign promoting TALER as a means of peer-to-peer settlement between individuals.
 3. Listings on additional exchanges, including Belarusian ones once they opened.
-4. Designing TALER's interaction with fiat electronic-payment systems.
+4. Designing TALER Blockchain's interaction with fiat electronic-payment systems.
 
 ### The "Denis Lavnikevich" Team
 
-About three months after the schism, Lavnikevich announced the creation of a separate Ethereum-based token called **"Taler Business"**, joined by Alexander Kornyshev who took on day-to-day delivery. The team continued to participate in the wider TALER community.
+About three months after the schism, Lavnikevich announced the creation of a separate Ethereum-based token called **"Taler Business"**, joined by Alexander Kornyshev who took on day-to-day delivery. The team continued to participate in the wider TALER Blockchain community.
 
 Members:
 
@@ -207,7 +207,7 @@ Stated plans:
 
 ### The "TalerOnline" Team
 
-Back when TALER had little more than a near-empty official site and a dead bitcointalk thread, enthusiasts **SG** and **Rusl Ter** built **TalerOnline.com** - at the time, the most complete public source of information about the coin: wallet guides, mining instructions, news, and so on. Programmer **DeL Esprit** later joined and built out the Telegram chats, price charts, services, and even mini-games with TALER integration.
+Back when TALER had little more than a near-empty official site and a dead bitcointalk thread, enthusiasts **SG** and **Rusl Ter** built **TalerOnline.com** - at the time, the most complete public source of information about the coin: wallet guides, mining instructions, news, and so on. Programmer **DeL Esprit** later joined and built out the Telegram chats, price charts, services, and even mini-games with TALER Blockchain integration.
 
 Members:
 
@@ -275,7 +275,7 @@ Highlights so far:
 
 The two branches - **0.17** ([github.com/cryptadev/taler](https://github.com/cryptadev/taler)) and **0.19** ([github.com/abkvme/taler](https://github.com/abkvme/taler)) - run side by side on the same chain. Same protocol, same network, fully interoperable as peers. The split is in the wallet itself: 0.19 is a serious upgrade with no path back to 0.17 once a wallet is migrated. 0.19 is the active development track today; 0.17 is in maintenance.
 
-In **December 2025**, the project also finally got a proper home: [taler.tech](https://taler.tech/) - a single site that gathers everything in one place (including this very page you are reading), with full translations across English, Belarusian, Russian, and Ukrainian. After eight years and three feuding factions, TALER has, at last, an address it isn't embarrassed about.
+In **December 2025**, the project also finally got a proper home: [taler.tech](https://taler.tech/) - a single site that gathers everything in one place (including this very page you are reading), with full translations across English, Belarusian, Russian, and Ukrainian. After eight years and three feuding factions, TALER Blockchain has, at last, an address it isn't embarrassed about.
 
 In **March 2026**, a brand-new block explorer also went live at [explorer.taler.tech](https://explorer.taler.tech/) - the first time the project has had a properly maintained explorer in a very long time.
 

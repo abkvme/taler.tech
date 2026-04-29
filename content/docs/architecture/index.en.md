@@ -3,11 +3,11 @@ title: "Architecture"
 weight: 6
 ---
 
-This document describes the technical architecture of the TALER blockchain, covering consensus mechanics, economic model, network protocol, and storage internals. All details are derived from the Taler source code.
+This document describes the technical architecture of the TALER Blockchain, covering consensus mechanics, economic model, network protocol, and storage internals. All details are derived from the TALER Blockchain source code.
 
 ## Overview
 
-TALER is a Bitcoin Core-based blockchain that implements a hybrid Proof-of-Work / Proof-of-Stake consensus model. Both PoW and PoS blocks coexist on the same chain, each governed by independent difficulty targets and block spacing rules.
+TALER Blockchain is a Bitcoin Core-based blockchain that implements a hybrid Proof-of-Work / Proof-of-Stake consensus model. Both PoW and PoS blocks coexist on the same chain, each governed by independent difficulty targets and block spacing rules.
 
 - **Genesis date:** September 13, 2017
 - **Codebase lineage:** Bitcoin Core (UTXO model, script system, peer protocol)
@@ -146,7 +146,7 @@ The PoS subsidy is always calculated as: `PoS_reward = PoW_reward × 30 / 70`
 
 ## Transaction Model
 
-TALER uses the **UTXO (Unspent Transaction Output)** model inherited from Bitcoin:
+TALER Blockchain uses the **UTXO (Unspent Transaction Output)** model inherited from Bitcoin:
 
 - **SegWit support:** Activated at height 32,256 (BIP141/143/144)
 - **Max block weight:** 4,000,000 weight units
@@ -181,7 +181,7 @@ Nodes advertise capabilities via service flags:
 
 ### Compact Block Relay
 
-TALER supports **BIP152 compact block relay** for efficient block propagation, reducing bandwidth by transmitting short transaction IDs instead of full transaction data.
+TALER Blockchain supports **BIP152 compact block relay** for efficient block propagation, reducing bandwidth by transmitting short transaction IDs instead of full transaction data.
 
 ## Fork History
 
@@ -195,7 +195,7 @@ TALER supports **BIP152 compact block relay** for efficient block propagation, r
 
 ## Storage Layer
 
-TALER uses **LevelDB** for persistent storage:
+TALER Blockchain uses **LevelDB** for persistent storage:
 
 | Database | Purpose |
 |---|---|
@@ -210,7 +210,7 @@ TALER uses **LevelDB** for persistent storage:
 
 ## BIP Support
 
-TALER implements the following Bitcoin Improvement Proposals:
+TALER Blockchain implements the following Bitcoin Improvement Proposals:
 
 | BIP | Description |
 |---|---|
@@ -231,7 +231,7 @@ TALER implements the following Bitcoin Improvement Proposals:
 
 | Specification | Value |
 |---|---|
-| Name | TALER (TLR) |
+| Name | TALER Coin (TLR) |
 | Type | Hybrid PoW/PoS |
 | Algorithm | Lyra2Z (memory-hard) |
 | Genesis date | September 13, 2017 |

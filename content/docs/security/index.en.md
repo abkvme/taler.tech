@@ -3,16 +3,16 @@ title: "Security Best Practices"
 weight: 4
 ---
 
-This guide covers essential security practices for protecting your TALER wallet and assets.
+This guide covers essential security practices for protecting your TALER Coin wallet and assets.
 
 ## Understanding wallet.dat - Your Wallet's Source of Truth
 
 ### What is wallet.dat?
 
-The `wallet.dat` file is the **only source of truth** for your TALER wallet. This Berkeley DB database file contains everything needed to access and spend your coins:
+The `wallet.dat` file is the **only source of truth** for your TALER Coin wallet. This Berkeley DB database file contains everything needed to access and spend your coins:
 
 **Critical Data Stored**:
-- **Private Keys**: Cryptographic keys that control your TALER coins
+- **Private Keys**: Cryptographic keys that control your TALER Coin
 - **HD Wallet Seed**: Master seed for hierarchical deterministic key derivation
 - **Transaction History**: Complete record of all wallet transactions
 - **Address Book**: Saved addresses with labels
@@ -41,7 +41,7 @@ The wallet.dat file is both your greatest asset and your greatest vulnerability.
 
 ### Wallet is NOT Encrypted by Default
 
-**Important**: When you first create a TALER wallet, it is **completely unencrypted**.
+**Important**: When you first create a TALER Coin wallet, it is **completely unencrypted**.
 
 This means:
 - Private keys are stored in **plaintext** inside wallet.dat
@@ -355,7 +355,7 @@ rpcallowip=127.0.0.1  # Only localhost
 
 ### Cold Storage for Large Holdings
 
-For significant amounts of TALER:
+For significant amounts of TALER Blockchain:
 
 1. **Create offline wallet** on air-gapped computer
 2. **Generate receiving address** offline
@@ -377,7 +377,7 @@ For significant amounts of TALER:
 
 ### Berkeley DB Private Mode
 
-TALER wallet uses Berkeley DB with private mode enabled by default (`-privdb` flag).
+TALER Coin wallet uses Berkeley DB with private mode enabled by default (`-privdb` flag).
 
 **What this means**:
 - Database files are not accessible via shared memory
@@ -386,7 +386,7 @@ TALER wallet uses Berkeley DB with private mode enabled by default (`-privdb` fl
 
 ### Database Slack Space
 
-**Security Feature**: When you encrypt your wallet, TALER performs a complete database rewrite.
+**Security Feature**: When you encrypt your wallet, TALER Blockchain performs a complete database rewrite.
 
 **Why this matters**:
 - Berkeley DB may leave unencrypted data in "slack space"
@@ -530,7 +530,7 @@ For organizational use or enhanced security:
 
 ### Hardware Wallets
 
-Currently TALER does not have dedicated hardware wallet support, but you can:
+Currently TALER Blockchain does not have dedicated hardware wallet support, but you can:
 - Use air-gapped computer as cold storage
 - Store wallet.dat on encrypted hardware device
 - Use hardware encrypted USB drives for backups

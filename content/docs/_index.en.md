@@ -7,19 +7,19 @@ Welcome to the TALER Blockchain documentation. Here you'll find comprehensive gu
 
 ## Source Code & Repositories
 
-The TALER ecosystem is open source. All projects live on GitHub:
+The TALER Blockchain ecosystem is open source. All projects live on GitHub:
 
 | Project | Repository | Purpose |
 |---|---|---|
 | **Taler Core** | [github.com/abkvme/taler](https://github.com/abkvme/taler) | Node daemon (`talerd`), CLI (`taler-cli`), and GUI wallet (`taler-qt`). Latest releases for Linux, macOS and Windows. |
 | **Taler Explorer** | [github.com/abkvme/taler-explorer](https://github.com/abkvme/taler-explorer) | Block explorer that powers [explorer.taler.tech](https://explorer.taler.tech/). Single-binary Go service that talks to a `talerd` over JSON-RPC. |
 | **taler.tech** | [github.com/abkvme/taler.tech](https://github.com/abkvme/taler.tech) | This documentation website (Hugo). |
-| **Legacy Core** | [github.com/cryptadev/taler](https://github.com/cryptadev/taler) | Historical Taler source up to v0.17.2.6. Use the current Taler Core repo above for anything new. |
+| **Legacy Core** | [github.com/cryptadev/taler](https://github.com/cryptadev/taler) | Historical TALER Blockchain source up to v0.17.2.6. Use the current Taler Core repo above for anything new. |
 
 Pre-built container images are published on GitHub Container Registry:
 
 ```
-docker pull ghcr.io/abkvme/taler:latest             # Taler node
+docker pull ghcr.io/abkvme/taler:latest             # TALER Blockchain node
 docker pull ghcr.io/abkvme/taler-explorer:latest    # Block explorer
 ```
 

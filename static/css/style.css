@@ -43,6 +43,24 @@ main {
     padding: 80px 0;
 }
 
+/* Disambiguation notice — TALER Blockchain vs GNU Taler */
+.disambiguation-notice {
+    background-color: rgba(27, 143, 186, 0.06);
+    border-bottom: 1px solid rgba(27, 143, 186, 0.15);
+    color: #455a64;
+}
+.disambiguation-notice strong {
+    color: var(--taler-blue-dark);
+}
+.disambiguation-notice a {
+    color: var(--taler-blue);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.disambiguation-notice a:hover {
+    color: var(--taler-blue-dark);
+}
+
 /* Related docs cards on docs single pages */
 .related-docs .related-card {
     border: 1px solid #e0e0e0;
@@ -95,6 +113,32 @@ main {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
+}
+
+/* Navbar brand: large "TALER" with smaller "blockchain" stacked below */
+.brand-stack {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+}
+.brand-main {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+.brand-sub {
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.32em;
+    text-transform: lowercase;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 2px;
+}
+@media (max-width: 480px) {
+    .brand-main { font-size: 1.2rem; }
+    .brand-sub  { font-size: 0.6rem; letter-spacing: 0.25em; }
 }
 
 .hero-section p {

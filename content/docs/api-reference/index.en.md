@@ -3,7 +3,7 @@ title: "API Reference"
 weight: 7
 ---
 
-Complete API reference for interacting with TALER blockchain programmatically.
+Complete API reference for interacting with TALER Blockchain programmatically.
 
 ## Content Placeholder
 
