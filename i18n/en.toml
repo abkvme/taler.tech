@@ -507,3 +507,9 @@ other = "This documentation is community-driven and open for contributions."
 
 [view_contribution_guide]
 other = "View Contribution Guidelines"
+
+[about_section]
+other = "About"
+
+[history]
+other = "History"

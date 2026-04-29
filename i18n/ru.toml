@@ -495,3 +495,9 @@ other = "Эта документация поддерживается сообщ
 
 [view_contribution_guide]
 other = "Посмотреть руководство по внесению вклада"
+
+[about_section]
+other = "О проекте"
+
+[history]
+other = "История"
