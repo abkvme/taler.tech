@@ -567,3 +567,6 @@ other = "Note:"
 other = "TALER Blockchain (ticker TLR) is an independent, open, community-driven cryptocurrency launched in September 2017. It is not affiliated with — and has no connection to — GNU Taler, a separate digital payment system by the GNU Project, available at "
 [disambig_text_after]
 other = "."
+
+[mirror]
+other = "Mirror"

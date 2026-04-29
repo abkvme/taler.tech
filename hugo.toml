@@ -81,6 +81,7 @@ disableKinds = ['taxonomy', 'term']
     twitter         = 'https://twitter.com/TalerBlockchain'
     telegram        = 'https://t.me/talercommunity'
     github          = 'https://github.com/abkvme/taler'
+    codeberg        = 'https://codeberg.org/taler/taler'
     githubLegacy    = 'https://github.com/cryptadev/taler'
     githubExplorer  = 'https://github.com/abkvme/taler-explorer'
     discussions     = 'https://github.com/abkvme/taler/discussions'

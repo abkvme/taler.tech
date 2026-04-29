@@ -23,6 +23,7 @@ weight: 1
 Завантажте останню версію гаманця TALER з репозиторію, що підтримується спільнотою, на GitHub:
 
 **Останній реліз**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
+**Дзеркало вихідного коду**: [Codeberg — codeberg.org/taler/taler](https://codeberg.org/taler/taler) *(лише для читання; той самий код, що й на GitHub, синхронізується як запобіжник від проблем з одним хостом)*
 
 ### Крок 2: Виберіть вашу платформу
 

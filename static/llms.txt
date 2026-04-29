@@ -33,7 +33,8 @@
 
 ## Community
 - [Useful links](https://taler.tech/en/links/): GitHub, Telegram, block explorers, exchanges
-- GitHub: https://github.com/abkvme/taler
+- GitHub (primary): https://github.com/abkvme/taler
+- Codeberg (mirror): https://codeberg.org/taler/taler
 - Telegram: https://t.me/talercommunity
 - Twitter / X: https://twitter.com/TalerBlockchain
 - Block explorer: https://explorer.taler.tech/

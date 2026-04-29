@@ -23,6 +23,7 @@ weight: 1
 Загрузіце апошнюю версію кашалька TALER з рэпазіторыя, які падтрымліваецца супольнасцю, на GitHub:
 
 **Апошні рэліз**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
+**Люстра зыходнага кода**: [Codeberg — codeberg.org/taler/taler](https://codeberg.org/taler/taler) *(толькі для чытання; той самы код, што і на GitHub, сінхранізуецца як страхоўка ад праблем з адным хостам)*
 
 ### Крок 2: Выберыце вашу платформу
 

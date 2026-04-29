@@ -23,6 +23,7 @@ weight: 1
 Загрузите последнюю версию кошелька TALER из репозитория, поддерживаемого сообществом, на GitHub:
 
 **Последний релиз**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
+**Зеркало исходного кода**: [Codeberg — codeberg.org/taler/taler](https://codeberg.org/taler/taler) *(только для чтения; тот же код, что и на GitHub, синхронизируется как страховка от проблем с одним хостом)*
 
 ### Шаг 2: Выберите вашу платформу
 

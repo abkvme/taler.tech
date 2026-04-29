@@ -20,9 +20,10 @@ Before you begin, ensure your system meets the following requirements:
 
 ### Step 1: Visit the Release Page
 
-Download the latest TALER Coin wallet from the community-driven GitHub repository:
+Download the latest TALER Coin wallet from the community-driven repository:
 
 **Latest Release**: [GitHub Releases](https://github.com/abkvme/taler/releases/latest)
+**Source mirror**: [Codeberg — codeberg.org/taler/taler](https://codeberg.org/taler/taler) *(read-only mirror; same code as the GitHub primary, kept in sync as a safeguard against single-host availability or policy issues)*
 
 ### Step 2: Choose Your Platform
 
