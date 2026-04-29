@@ -48,7 +48,7 @@ disableKinds = ['taxonomy', 'term']
 [params]
   description = 'TALER Blockchain — a modern hybrid PoW/PoS cryptocurrency inspired by the historic European Thaler.'
   primaryColor = '#1B8FBA'
-  ogImage = '/images/talerlogo2.png'
+  ogImage = '/images/og-default.png'
   twitterSite = '@TalerBlockchain'
   contactEmail = 'info@taler.tech'
   securityEmail = 'info@taler.tech'
