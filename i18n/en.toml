@@ -136,6 +136,9 @@ other = "Join our channel"
 [community_server]
 other = "Community server"
 
+[wallet_spec_desc]
+other = "Wallet key derivation spec & test vectors"
+
 [developer_resources]
 other = "Developer Resources"
 

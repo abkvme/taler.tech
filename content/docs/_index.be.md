@@ -14,6 +14,7 @@ description: "Поўная дакументацыя па блакчэйне TALE
 | **Taler Core** | [github.com/abkvme/taler](https://github.com/abkvme/taler) | Вузел сеткі (`talerd`), CLI (`taler-cli`) і GUI-кашалёк (`taler-qt`). Актуальныя рэлізы для Linux, macOS і Windows. |
 | **Taler Explorer** | [github.com/abkvme/taler-explorer](https://github.com/abkvme/taler-explorer) | Аглядальнік блакчэйна, на якім працуе [explorer.taler.tech](https://explorer.taler.tech/). Аднафайлавы Go-сэрвіс, які размаўляе з `talerd` па JSON-RPC. |
 | **taler.tech** | [github.com/abkvme/taler.tech](https://github.com/abkvme/taler.tech) | Гэты сайт дакументацыі (Hugo). |
+| **Taler Spec** | [github.com/abkvme/taler.spec](https://github.com/abkvme/taler.spec) | Спецыфікацыя дэрывацыі ключоў гаманца (BIP39 / BIP32 / BIP44, тып манеты SLIP-44 1524) і агульныя тэст-вектары, паводле якіх правяраецца кожная рэалізацыя гаманца Taler. |
 | **Legacy Core** | [github.com/cryptadev/taler](https://github.com/cryptadev/taler) | Гістарычныя зыходнікі Taler да v0.17.2.6. Для ўсяго новага выкарыстоўвайце Taler Core вышэй. |
 
 Гатовыя кантэйнерныя выявы апублікаваныя ў GitHub Container Registry:

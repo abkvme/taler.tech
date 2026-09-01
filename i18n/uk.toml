@@ -136,6 +136,9 @@ other = "Приєднуйтесь до нашого каналу"
 [community_server]
 other = "Сервер спільноти"
 
+[wallet_spec_desc]
+other = "Специфікація деривації ключів гаманця та тест-вектори"
+
 [developer_resources]
 other = "Ресурси для розробників"
 

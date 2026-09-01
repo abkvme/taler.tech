@@ -14,6 +14,7 @@ description: "Полная документация по блокчейну TALE
 | **Taler Core** | [github.com/abkvme/taler](https://github.com/abkvme/taler) | Узел сети (`talerd`), CLI (`taler-cli`) и GUI-кошелёк (`taler-qt`). Актуальные релизы для Linux, macOS и Windows. |
 | **Taler Explorer** | [github.com/abkvme/taler-explorer](https://github.com/abkvme/taler-explorer) | Обозреватель блокчейна, на котором работает [explorer.taler.tech](https://explorer.taler.tech/). Однофайловый Go-сервис, общающийся с `talerd` по JSON-RPC. |
 | **taler.tech** | [github.com/abkvme/taler.tech](https://github.com/abkvme/taler.tech) | Этот сайт документации (Hugo). |
+| **Taler Spec** | [github.com/abkvme/taler.spec](https://github.com/abkvme/taler.spec) | Спецификация деривации ключей кошелька (BIP39 / BIP32 / BIP44, тип монеты SLIP-44 1524) и общие тест-векторы, по которым проверяется каждая реализация кошелька Taler. |
 | **Legacy Core** | [github.com/cryptadev/taler](https://github.com/cryptadev/taler) | Исторические исходники Taler до v0.17.2.6. Для всего нового используйте Taler Core выше. |
 
 Готовые контейнерные образы опубликованы в GitHub Container Registry:

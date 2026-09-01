@@ -14,6 +14,7 @@ The TALER Blockchain ecosystem is open source. All projects live on GitHub:
 | **Taler Core** | [github.com/abkvme/taler](https://github.com/abkvme/taler) | Node daemon (`talerd`), CLI (`taler-cli`), and GUI wallet (`taler-qt`). Latest releases for Linux, macOS and Windows. |
 | **Taler Explorer** | [github.com/abkvme/taler-explorer](https://github.com/abkvme/taler-explorer) | Block explorer that powers [explorer.taler.tech](https://explorer.taler.tech/). Single-binary Go service that talks to a `talerd` over JSON-RPC. |
 | **taler.tech** | [github.com/abkvme/taler.tech](https://github.com/abkvme/taler.tech) | This documentation website (Hugo). |
+| **Taler Spec** | [github.com/abkvme/taler.spec](https://github.com/abkvme/taler.spec) | Wallet key derivation specification (BIP39 / BIP32 / BIP44, SLIP-44 coin type 1524) and the shared test vectors every Taler wallet implementation verifies against. |
 | **Legacy Core** | [github.com/cryptadev/taler](https://github.com/cryptadev/taler) | Historical TALER Blockchain source up to v0.17.2.6. Use the current Taler Core repo above for anything new. |
 
 Pre-built container images are published on GitHub Container Registry:
