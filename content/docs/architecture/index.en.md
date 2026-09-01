@@ -226,6 +226,32 @@ TALER Blockchain implements the following Bitcoin Improvement Proposals:
 | BIP147 | Dealing with dummy stack element malleability |
 | BIP152 | Compact block relay |
 | BIP173 | Bech32 address encoding |
+| BIP32 | Hierarchical deterministic wallets |
+| BIP39 | Mnemonic recovery phrases (from wallet 0.20.0) |
+| BIP44 | Multi-account hierarchy — registered coin type **1524** |
+
+### Registered coin type (SLIP-44)
+
+TALER Blockchain holds a permanently registered BIP-44 coin type:
+
+| | |
+|---|---|
+| Coin type | **1524** |
+| Hardened path component | `0x800005F4` |
+| Derivation path | `m/44'/1524'/<account>'/<change>/<index>` |
+| Registered | 18 December 2017 |
+| Registry | [SLIP-0044 — Registered coin types for BIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) |
+
+SLIP-0044 is the public registry that BIP-44 defers to for coin type numbers, maintained by
+SatoshiLabs. An entry there is what stops two projects from deriving keys at the same path,
+and it is the number wallets and recovery tools use to find a coin's accounts.
+
+TALER's entry was added three months after the 13 September 2017 genesis block, so every
+TALER wallet that follows BIP-44 — desktop or mobile — derives from `m/44'/1524'/…` and
+recovers the same addresses from the same recovery phrase, on any implementation.
+
+Note that GNU Taler, an unrelated payment system, has no SLIP-0044 entry; coin type 1524 is
+this project's.
 
 ## Coin Specifications Quick Reference
 
@@ -247,4 +273,5 @@ TALER Blockchain implements the following Bitcoin Improvement Proposals:
 | Max block weight | 4,000,000 |
 | Default port | 23153 |
 | Address prefix | T (Base58), tlr (Bech32) |
+| BIP44 coin type | 1524 (`0x800005F4`) |
 | SegWit | Active (since height 32,256) |
